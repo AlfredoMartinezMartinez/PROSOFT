@@ -12,6 +12,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
 
 public class IU_USUARIO {
 
@@ -22,6 +24,8 @@ public class IU_USUARIO {
 	private JLabel lblMensaje;
 	private JButton btnPausa;
 	private JButton btnStop;
+	private JButton btnBuscar;
+	private JTextField textFieldBuscar;
 
 	/**
 	 * Launch the application.
@@ -58,31 +62,42 @@ public class IU_USUARIO {
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			panel.setLayout(null);
 			{
-				btnPlay = new JButton("Play");
+				btnPlay = new JButton("Play");			
 				btnPlay.addActionListener(new BtnPlayActionListener());
-				btnPlay.setBounds(154, 66, 115, 29);
+				btnPlay.setBounds(23, 199, 100, 30);
 				panel.add(btnPlay);
 			}
 			{
 				lblMensaje = new JLabel("");
-				lblMensaje.setBounds(177, 207, 69, 20);
+				lblMensaje.setBounds(152, 234, 143, 16);
 				panel.add(lblMensaje);
 			}
 			{
 				btnPausa = new JButton("Pausa");
 				btnPausa.addActionListener(new BtnPausaActionListener());
-				btnPausa.setBounds(154, 106, 115, 29);
+				btnPausa.setBounds(133, 199, 100, 30);
 				panel.add(btnPausa);
 			{
 				btnStop = new JButton("Stop");
 				btnStop.addActionListener(new BtnStopActionListener());
 						
-				btnStop.setBounds(154, 146, 115, 29);
+				btnStop.setBounds(243, 200, 100, 30);
 				panel.add(btnStop);
 				
 				}
 				//btnStop.setEnabled(false);
 				//btnPausa.setEnabled(false);
+			}
+			{
+				btnBuscar = new JButton("Buscar");
+				btnBuscar.setBounds(152, 11, 100, 30);
+				panel.add(btnBuscar);
+			}
+			{
+				textFieldBuscar = new JTextField();
+				textFieldBuscar.setBounds(256, 11, 170, 30);
+				panel.add(textFieldBuscar);
+				textFieldBuscar.setColumns(10);
 			}
 		}
 	}
@@ -131,5 +146,4 @@ public class IU_USUARIO {
 			}
 		}
 	}
-	
 }
