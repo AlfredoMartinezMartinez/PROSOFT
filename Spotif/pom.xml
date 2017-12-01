@@ -2,6 +2,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Prosoft</groupId>
   <artifactId>Spotif</artifactId>
-  <version>1.8</version>
-  <name>borrar listas</name>
+  <version>1.9</version>
+  <name>modificaciones interfaces</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.googlecode.soundlibs</groupId>
+  		<artifactId>basicplayer</artifactId>
+  		<version>3.0.0.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>mysql</groupId>
+  		<artifactId>mysql-connector-java</artifactId>
+  		<version>5.1.39</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.netbeans.external</groupId>
+  		<artifactId>AbsoluteLayout</artifactId>
+  		<version>RELEASE802</version>
+  	</dependency>
+  </dependencies>
 </project>

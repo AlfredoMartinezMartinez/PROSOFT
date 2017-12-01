@@ -11,7 +11,8 @@ public class GestorReproductorMusica {
 		}
 		
 		public void AbrirFichero() throws Exception{
-			player.open(new File("src/main/resources/Dire Straits - Sultans Of Swing.mp3"));
+			//player.open(new File("Dire Straits - Sultans Of Swing.mp3"));
+			player.open(getClass().getResourceAsStream("/Dire Straits - Sultans Of Swing.mp3"));
 		}
 		
 	    public void Pausa() throws Exception {
