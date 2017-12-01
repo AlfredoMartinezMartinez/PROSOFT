@@ -57,11 +57,13 @@ public class GestorUsuario {
 	 * 
 	 * @param usuario
 	 */
-	public boolean eliminarUsuario(Usuario usuario) {
+	
+
+	public boolean eliminarUsuario(Usuario usuario){
 		// TODO - implement GestorUsuario.eliminarUsuario
 		throw new UnsupportedOperationException();
 	}
-
+	
 	/**
 	 * 
 	 * @param msg
@@ -70,5 +72,6 @@ public class GestorUsuario {
 		// TODO - implement GestorUsuario.generarMensaje
 		throw new UnsupportedOperationException();
 	}
+
 
 }
