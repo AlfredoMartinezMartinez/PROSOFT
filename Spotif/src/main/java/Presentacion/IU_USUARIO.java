@@ -5,15 +5,13 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Dominio.Gestor_Reproductor_Musica;
+import Dominio.GestorReproductorMusica;
 
 import java.awt.BorderLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import javax.swing.JTextField;
 
 import javax.swing.JTextField;
 import java.awt.Toolkit;
@@ -23,7 +21,7 @@ public class IU_USUARIO {
 	private JFrame frmProsoft;
 	private JPanel panel;
 	private JButton btnPlay;
-	private Gestor_Reproductor_Musica gestor_reproductor = new Gestor_Reproductor_Musica();
+	private GestorReproductorMusica gestor_reproductor = new GestorReproductorMusica();
 	private JLabel lblMensaje;
 	private JButton btnPausa;
 	private JButton btnStop;
@@ -33,7 +31,7 @@ public class IU_USUARIO {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -44,7 +42,7 @@ public class IU_USUARIO {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the application.
@@ -58,6 +56,7 @@ public class IU_USUARIO {
 	 */
 	private void initialize() {
 		frmProsoft = new JFrame();
+		frmProsoft.setVisible(true);
 		frmProsoft.setTitle("Prosoft");
 		frmProsoft.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_USUARIO.class.getResource("/imagenes/ProSoft_SinFondo.png")));
 		frmProsoft.setBounds(100, 100, 720, 460);
@@ -69,11 +68,7 @@ public class IU_USUARIO {
 			{
 				btnPlay = new JButton("Play");			
 				btnPlay.addActionListener(new BtnPlayActionListener());
-<<<<<<< HEAD
-				btnPlay.setBounds(23, 199, 100, 30);
-=======
 				btnPlay.setBounds(150, 290, 100, 30);
->>>>>>> v1.4
 				panel.add(btnPlay);
 			}
 			{
@@ -84,21 +79,13 @@ public class IU_USUARIO {
 			{
 				btnPausa = new JButton("Pausa");
 				btnPausa.addActionListener(new BtnPausaActionListener());
-<<<<<<< HEAD
-				btnPausa.setBounds(133, 199, 100, 30);
-=======
 				btnPausa.setBounds(278, 290, 100, 30);
->>>>>>> v1.4
 				panel.add(btnPausa);
 			{
 				btnStop = new JButton("Stop");
 				btnStop.addActionListener(new BtnStopActionListener());
 						
-<<<<<<< HEAD
-				btnStop.setBounds(243, 200, 100, 30);
-=======
 				btnStop.setBounds(408, 290, 100, 30);
->>>>>>> v1.4
 				panel.add(btnStop);
 				
 				}
@@ -107,20 +94,12 @@ public class IU_USUARIO {
 			}
 			{
 				btnBuscar = new JButton("Buscar");
-<<<<<<< HEAD
-				btnBuscar.setBounds(152, 11, 100, 30);
-=======
 				btnBuscar.setBounds(309, 11, 100, 30);
->>>>>>> v1.4
 				panel.add(btnBuscar);
 			}
 			{
 				textFieldBuscar = new JTextField();
-<<<<<<< HEAD
-				textFieldBuscar.setBounds(256, 11, 170, 30);
-=======
 				textFieldBuscar.setBounds(420, 11, 250, 30);
->>>>>>> v1.4
 				panel.add(textFieldBuscar);
 				textFieldBuscar.setColumns(10);
 			}
@@ -153,6 +132,7 @@ public class IU_USUARIO {
 				gestor_reproductor.Pausa();
 				btnPausa.setEnabled(false);
 				//btnPausa.setEnabled(b);
+				
 			} catch (Exception e) {
 				lblMensaje.setText(e.getMessage());
 			}

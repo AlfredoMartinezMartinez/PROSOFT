@@ -5,7 +5,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Dominio.Gestor_Reproductor_Musica;
+import Dominio.GestorReproductorMusica;
 
 import java.awt.BorderLayout;
 import javax.swing.JButton;
@@ -17,12 +17,12 @@ import javax.swing.JTextField;
 import java.awt.Toolkit;
 import java.awt.SystemColor;
 
-public class IU_ADMINISTRADOR {
+public class IU_ADMINISTRADOR{
 
 	private JFrame frmProsoft;
 	private JPanel panel;
 	private JButton btnPlay;
-	private Gestor_Reproductor_Musica gestor_reproductor = new Gestor_Reproductor_Musica();
+	private GestorReproductorMusica gestor_reproductor = new GestorReproductorMusica();
 	private JLabel lblMensaje;
 	private JButton btnPausa;
 	private JButton btnStop;
@@ -169,4 +169,6 @@ public class IU_ADMINISTRADOR {
 			}
 		}
 	}
+
+	
 }
