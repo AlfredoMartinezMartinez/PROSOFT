@@ -150,12 +150,12 @@ public class IU_LOGIN extends javax.swing.JFrame {
                     if(tipo.equals("admin")){
                         
                         IU_ADMINISTRADOR frame = new IU_ADMINISTRADOR();
-                       // frame.setVisible(true);
+                        frame.setVisible(true);
                         //frame.jLabelNusario.setText(jTextFieldUser.getText());
                         this.setVisible(false);}
                     if(tipo.equals("usuario")){
                         IU_USUARIO frame2 = new IU_USUARIO();                    
-                        //frame2.setVisible(true);
+                        frame2.setVisible(true);
                         //frame2.jLabelNusario.setText(jTextFieldUser.getText());
                         this.setVisible(false);}
                     

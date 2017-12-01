@@ -153,8 +153,8 @@ public class IU_CREARUSUARIO extends javax.swing.JFrame {
 		if (autenticar1){
 		                      
                     registrado.setText("Usuario registrado");
-                    IU_LOGIN frame=new IU_LOGIN();
-                    frame.setVisible(true);
+                    IU_LOGIN framelog=new IU_LOGIN();
+                    framelog.setVisible(true);
                     this.setVisible(false);
                     
 			}
