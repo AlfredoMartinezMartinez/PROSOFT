@@ -2,7 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Prosoft</groupId>
   <artifactId>Spotif</artifactId>
+<<<<<<< HEAD
   <version>1.3</version>
   <name>buscar musica</name>
   <description>buscar musica</description>
+=======
+  <version>1.4</version>
+  <name>gestor musica</name>
+  <description>IU_administrador implmentada, clase gestor musica y clase musica</description>
+>>>>>>> v1.4
 </project>
