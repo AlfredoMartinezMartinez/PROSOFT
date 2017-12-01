@@ -15,8 +15,9 @@ import javax.swing.JLabel;
 
 import javax.swing.JTextField;
 import java.awt.Toolkit;
+import java.awt.SystemColor;
 
-public class IU_USUARIO {
+public class IU_ADMINISTRADOR {
 
 	private JFrame frmProsoft;
 	private JPanel panel;
@@ -27,6 +28,7 @@ public class IU_USUARIO {
 	private JButton btnStop;
 	private JButton btnBuscar;
 	private JTextField textFieldBuscar;
+	private JButton btnNewButton;
 
 	/**
 	 * Launch the application.
@@ -35,7 +37,7 @@ public class IU_USUARIO {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					IU_USUARIO window = new IU_USUARIO();
+					IU_ADMINISTRADOR window = new IU_ADMINISTRADOR();
 					window.frmProsoft.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -47,7 +49,7 @@ public class IU_USUARIO {
 	/**
 	 * Create the application.
 	 */
-	public IU_USUARIO() {
+	public IU_ADMINISTRADOR() {
 		initialize();
 	}
 
@@ -57,11 +59,13 @@ public class IU_USUARIO {
 	private void initialize() {
 		frmProsoft = new JFrame();
 		frmProsoft.setTitle("Prosoft");
-		frmProsoft.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_USUARIO.class.getResource("/imagenes/ProSoft_SinFondo.png")));
+		frmProsoft.setForeground(SystemColor.activeCaption);
+		frmProsoft.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_ADMINISTRADOR.class.getResource("/imagenes/ProSoft_SinFondo.png")));
 		frmProsoft.setBounds(100, 100, 720, 460);
 		frmProsoft.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		{
 			panel = new JPanel();
+			panel.setBorder(null);
 			frmProsoft.getContentPane().add(panel, BorderLayout.CENTER);
 			panel.setLayout(null);
 			{
@@ -88,8 +92,7 @@ public class IU_USUARIO {
 				panel.add(btnStop);
 				
 				}
-				//btnStop.setEnabled(false);
-				//btnPausa.setEnabled(false);
+				
 			}
 			{
 				btnBuscar = new JButton("Buscar");
@@ -101,6 +104,12 @@ public class IU_USUARIO {
 				textFieldBuscar.setBounds(420, 11, 250, 30);
 				panel.add(textFieldBuscar);
 				textFieldBuscar.setColumns(10);
+			}
+			{
+				btnNewButton = new JButton("Admin");
+				btnNewButton.addActionListener(new BtnAdminActionListener());
+				btnNewButton.setBounds(40, 11, 100, 30);
+				panel.add(btnNewButton);
 			}
 		}
 	}
@@ -144,6 +153,17 @@ public class IU_USUARIO {
 				gestor_reproductor.Stop();
 				btnPausa.setEnabled(true);
 				btnPlay.setEnabled(true);				
+			} catch (Exception e) {
+				lblMensaje.setText(e.getMessage());
+			}
+		}
+	}
+	
+	private class BtnAdminActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent arg0) {
+			try {
+				
+												
 			} catch (Exception e) {
 				lblMensaje.setText(e.getMessage());
 			}

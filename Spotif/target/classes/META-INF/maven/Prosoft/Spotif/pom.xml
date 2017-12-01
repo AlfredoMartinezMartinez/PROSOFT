@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Prosoft</groupId>
   <artifactId>Spotif</artifactId>
-  <version>1.2</version>
-  <name>comprar musica</name>
-  <description>comprar musica</description>
+  <version>1.4</version>
+  <name>gestor musica</name>
+  <description>IU_administrador implmentada, clase gestor musica y clase musica</description>
 </project>
