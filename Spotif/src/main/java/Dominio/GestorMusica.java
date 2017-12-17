@@ -2,31 +2,28 @@ package Dominio;
 
 public class GestorMusica {
 
-	/**
-	 * 
-	 * @param musica
-	 */
-	public boolean añadirMusica(Musica musica) {
+	
+	public static boolean añadirMusica() {
 		// TODO - implement GestorMusica.añadirMusica
-		throw new UnsupportedOperationException();
+		boolean añadir=false;
+		return añadir;
+		//throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param musica
-	 */
-	public boolean modificarMusica(Musica musica) {
+	
+	public static boolean modificarMusica() {
 		// TODO - implement GestorMusica.modificarMusica
-		throw new UnsupportedOperationException();
+		boolean modificar=false;
+		return modificar;
+		//throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param musica
-	 */
-	public boolean eliminarMusica(Musica musica) {
+	
+	public static boolean eliminarMusica() {
 		// TODO - implement GestorMusica.eliminarMusica
-		throw new UnsupportedOperationException();
+		boolean eliminar=false;
+		return eliminar;
+		//throw new UnsupportedOperationException();
 	}
 
 }

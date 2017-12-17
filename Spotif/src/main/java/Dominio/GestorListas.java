@@ -2,13 +2,12 @@ package Dominio;
 
 public class GestorListas {
 
-	/**
-	 * 
-	 * @param musica
-	 */
-	public boolean gestionarListas(Musica musica) {
+	
+	public boolean gestionarListas(String musica) {
 		// TODO - implement GestorListas.gestionarListas
-		throw new UnsupportedOperationException();
+		boolean gestion=false;
+		return gestion;
+		//throw new UnsupportedOperationException();
 	}
 
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-17T18:05:07.318">
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorReproductorMusica.java">
+<violation beginline="2" endline="2" begincolumn="1" endcolumn="20" rule="UnusedImports" ruleset="Import Statements" package="Dominio" class="GestorReproductorMusica" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.io.File'
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Usuario.java">
+<violation beginline="8" endline="8" begincolumn="24" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code" package="Dominio" class="Usuario" variable="nombre" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'nombre'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="24" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code" package="Dominio" class="Usuario" variable="apellidos" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'apellidos'.
+</violation>
+<violation beginline="10" endline="10" begincolumn="24" endcolumn="37" rule="UnusedPrivateField" ruleset="Unused Code" package="Dominio" class="Usuario" variable="nombre_usuario" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'nombre_usuario'.
+</violation>
+<violation beginline="11" endline="11" begincolumn="24" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="Dominio" class="Usuario" variable="password" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'password'.
+</violation>
+<violation beginline="12" endline="12" begincolumn="24" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code" package="Dominio" class="Usuario" variable="correo" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'correo'.
+</violation>
+<violation beginline="35" endline="35" begincolumn="26" endcolumn="26" rule="UnusedLocalVariable" ruleset="Unused Code" package="Dominio" class="Usuario" method="read" variable="g" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'g'.
+</violation>
+<violation beginline="35" endline="35" begincolumn="24" endcolumn="24" rule="UnusedLocalVariable" ruleset="Unused Code" package="Dominio" class="Usuario" method="read" variable="l" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedLocalVariable" priority="3">
+Avoid unused local variables such as 'l'.
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Persistencia\AgenteUsuario.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="AgenteUsuario" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Iterator'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="AgenteUsuario" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.LinkedList'
+</violation>
+<violation beginline="8" endline="8" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="AgenteUsuario" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.List'
+</violation>
+<violation beginline="64" endline="66" begincolumn="24" endcolumn="13" rule="EmptyIfStmt" ruleset="Empty Code" package="Persistencia" class="AgenteUsuario" method="insert" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/empty.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Persistencia\Agente_Musica.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="26" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="Agente_Musica" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Iterator'
+</violation>
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="24" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="Agente_Musica" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Vector'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Import Statements" package="Persistencia" class="Agente_Musica" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.LinkedList'
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java">
+<violation beginline="105" endline="105" begincolumn="73" endcolumn="75" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_ADMINISTRADOR" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="110" endline="110" begincolumn="73" endcolumn="75" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_ADMINISTRADOR" method="jButtonPausaActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="125" endline="125" begincolumn="72" endcolumn="74" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_ADMINISTRADOR" method="jButtonPlayActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="144" endline="144" begincolumn="72" endcolumn="74" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_ADMINISTRADOR" method="jButtonStopActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java">
+<violation beginline="136" endline="136" begincolumn="73" endcolumn="75" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_CREARUSUARIO" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="141" endline="141" begincolumn="80" endcolumn="82" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_CREARUSUARIO" method="jButtonCrearUsuarioActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="177" endline="177" begincolumn="75" endcolumn="77" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_CREARUSUARIO" method="jButtonLimpiarActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_LOGIN.java">
+<violation beginline="199" endline="203" begincolumn="29" endcolumn="25" rule="EmptyTryBlock" ruleset="Empty Code" package="Presentacion" class="IU_LOGIN$BtnNuevoUsuarioActionListener" method="actionPerformed" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/empty.html#EmptyTryBlock" priority="3">
+Avoid empty try blocks
+</violation>
+</file>
+<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_USUARIO.java">
+<violation beginline="100" endline="100" begincolumn="73" endcolumn="75" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_USUARIO" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="105" endline="105" begincolumn="73" endcolumn="75" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_USUARIO" method="jButtonPausaActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="120" endline="120" begincolumn="72" endcolumn="74" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_USUARIO" method="jButtonPlayActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="139" endline="139" begincolumn="72" endcolumn="74" rule="UnusedFormalParameter" ruleset="Unused Code" package="Presentacion" class="IU_USUARIO" method="jButtonStopActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+</pmd>

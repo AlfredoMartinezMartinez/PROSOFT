@@ -1,6 +1,7 @@
 package Dominio;
 import java.util.Vector;
-import Persistencia.AgenteUsuario;
+
+import Persistencia.*;
 
 public class Usuario {
 
