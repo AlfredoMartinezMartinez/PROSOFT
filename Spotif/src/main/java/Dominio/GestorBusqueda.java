@@ -1,14 +1,21 @@
 package Dominio;
 
+/**
+ * Clase que se encarga de la busqueda de canciones
+ * 
+ * @author PROSOFT
+ *
+ */
 public class GestorBusqueda {
 
 	/**
+	 * Método que implementa la búsqueda de canciones
 	 * 
-	 * @param musica
+	 * @return buscar
 	 */
 	public boolean buscarMusica() {
-		// TODO - implement GestorBusqueda.buscarMusica
-		throw new UnsupportedOperationException();
+		boolean buscar = false;
+		return buscar;
 	}
 
 }

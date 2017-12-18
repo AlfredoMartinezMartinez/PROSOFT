@@ -1,32 +1,45 @@
 package Dominio;
 
+/**
+ * Clase que se encarda de implementar las operaciones relacionadas con la
+ * gestion de musica
+ * 
+ * @author PROSOFT
+ *
+ */
 public class GestorMusica {
 
 	/**
+	 * Metodo que se encarga de aÃ±adir la musica a la base de datos por parte del
+	 * administrador
 	 * 
-	 * @param musica
+	 * @return anadir Devuelve si se ha aÃ±adido correctamente o no
 	 */
-	public boolean añadirMusica(Musica musica) {
-		// TODO - implement GestorMusica.añadirMusica
-		throw new UnsupportedOperationException();
+	public static boolean anadirMusica() {
+		boolean anadir = false;
+		return anadir;
 	}
 
 	/**
+	 * Metodo que se encarga de modificar la musica a la base de datos por parte
+	 * del administrador
 	 * 
-	 * @param musica
+	 * @return modificar Devuelve si se ha modificado correctamente o no
 	 */
-	public boolean modificarMusica(Musica musica) {
-		// TODO - implement GestorMusica.modificarMusica
-		throw new UnsupportedOperationException();
+	public static boolean modificarMusica() {
+		boolean modificar = false;
+		return modificar;
 	}
 
 	/**
+	 * Metodo que se encarga de eliminar la musica a la base de datos por parte del
+	 * administrador
 	 * 
-	 * @param musica
+	 * @return eliminar Devuelve si se ha eliminado correctamente o no
 	 */
-	public boolean eliminarMusica(Musica musica) {
-		// TODO - implement GestorMusica.eliminarMusica
-		throw new UnsupportedOperationException();
+	public static boolean eliminarMusica() {
+		boolean eliminar = false;
+		return eliminar;
 	}
 
 }
