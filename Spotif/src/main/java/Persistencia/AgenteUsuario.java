@@ -162,36 +162,5 @@ public class AgenteUsuario {
 		return vec;
 	}
 
-	/**
-	 * Metodo que selecciona un cliente de la BBDD
-	 * 
-	 * @param SQL
-	 *            Instruccion SQL de seleccion
-	 * @return vec Vector de vectores, donde cada uno de los vectores que contiene
-	 *         el vector principal representa los registros que se recuperan de la
-	 *         base de datos.
-	 * @throws SQLException
-	 *             Control de Errores SQL
-	 * @throws Exception
-	 *             Control de Errores
-	 */
-	public Vector<Object> selectcliente(String SQL) throws SQLException, Exception {
-		conectar();
-		PreparedStatement select = mBD.prepareStatement(SQL);
-		ResultSet s = select.executeQuery();
-		Vector<Object> vec = new Vector<Object>();
-		Vector<Object> auxiliar;
-		while (s.next()) {
-			auxiliar = new Vector<Object>();
-			auxiliar.add((String) s.getString("nombre"));
-			auxiliar.add((String) s.getString("apellidos"));
-			auxiliar.add((String) s.getString("dni"));
-			auxiliar.add((String) s.getString("tlf"));
-			vec.add((Vector) auxiliar);
-
-		}
-		s.close();
-
-		return vec;
-	}
+	
 }
