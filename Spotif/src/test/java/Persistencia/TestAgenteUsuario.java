@@ -30,8 +30,10 @@ public class TestAgenteUsuario {
 	/**
 	 * Test que devuelve verdadero si se ha introducido correctamente el usuario
 	 * 
-	 * @throws Exception control de errores
-	 * @throws SQLException error sintaxis
+	 * @throws Exception
+	 *             control de errores
+	 * @throws SQLException
+	 *             error sintaxis
 	 */
 
 	@Test
@@ -42,42 +44,32 @@ public class TestAgenteUsuario {
 		int obtenido = mInstancia.insert(SQL_insert_1);
 		assertTrue(esperado == obtenido);
 	}
-	
-	
 
 	@Test
 	public void testInsert2() throws Exception {
+		int expected=0;
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_insert_2 = "Hola Test";
-		try {
-			mInstancia.insert(SQL_insert_2);
-		} catch (SQLException e) {
-			//
-		}
-
+		int retorno=mInstancia.insert(SQL_insert_2);
+		assertTrue(retorno==expected);
 	}
 
 	@Test
 	public void testInsert3() throws Exception {
+		int expected=0;
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_insert_3 = "INSERT INTO usuario VALUES('testNom','testApellido','testLog','testPass','testCorreo','testRol')";
-		try {
-			mInstancia.insert(SQL_insert_3);
-		} catch (SQLException e) {
-			//
-		}
+		int retorno=mInstancia.insert(SQL_insert_3);
+		assertTrue(retorno==expected);
 	}
-	@Test
+
+	@Test(expected = SQLException.class)
 	public void testInsert4() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_insert_4 = null;
-		try {
-			mInstancia.insert(SQL_insert_4);
-		} catch (SQLException e) {
-			//
-		}
+		mInstancia.insert(SQL_insert_4);
 	}
-	
+
 	@Test
 	public void testUpdate() throws Exception, SQLException {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
@@ -87,23 +79,18 @@ public class TestAgenteUsuario {
 		assertTrue(esperado == obtenido);
 	}
 
-	@Test
+	@Test(expected = SQLException.class)
 	public void testUpdate2() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_update_2 = "Modifica nombre testNom por TestNom2";
-		try {
-			mInstancia.update(SQL_update_2);
-
-		} catch (Exception e) {
-			assertTrue(true);
-		}
+		mInstancia.update(SQL_update_2);
 	}
 
 	@Test
 	public void testSelect() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_select_1 = "SELECT * FROM usuario WHERE login='testLog'";
-		Usuario expected = new Usuario("testNom","testApellido","testLog","testPass","testCorreo","testRol");
+		Usuario expected = new Usuario("testNom", "testApellido", "testLog", "testPass", "testCorreo", "testRol");
 		Usuario u = null;
 		Vector<Object> aux = null;
 		Vector<Object> res = mInstancia.select(SQL_select_1);
@@ -112,9 +99,12 @@ public class TestAgenteUsuario {
 			u = new Usuario((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),
 					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));
 		}
-	/*	assertTrue(u.getNombre().equals("testNom") && u.getApellidos().equals("testApellido")
-				&& u.getPassword().equals("testPass") && u.getNombre_usuario().equals("testLog")
-				&& u.getCorreo().equals("testCorreo") && u.getRol().equals("testRol"));*/
+		/*
+		 * assertTrue(u.getNombre().equals("testNom") &&
+		 * u.getApellidos().equals("testApellido") && u.getPassword().equals("testPass")
+		 * && u.getNombre_usuario().equals("testLog") &&
+		 * u.getCorreo().equals("testCorreo") && u.getRol().equals("testRol"));
+		 */
 		assertTrue(expected.equals(u));
 
 	}
@@ -128,17 +118,12 @@ public class TestAgenteUsuario {
 		assertTrue(esperado == obtenido);
 	}
 
-	@Test
+	@Test(expected = SQLException.class)
 	public void testZDelete2() throws Exception, SQLException {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_delete_2 = "Adios Test";
-		try {
-			mInstancia.delete(SQL_delete_2);
-
-		} catch (Exception e) {
-			assertTrue(true);
-		}
+		mInstancia.delete(SQL_delete_2);
 
 	}
 
-	}
+}

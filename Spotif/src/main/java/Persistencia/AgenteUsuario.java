@@ -72,7 +72,7 @@ public class AgenteUsuario {
 	 * @throws Exception
 	 *             Control de Errores
 	 */
-	public int insert(String SQL) throws SQLException, Exception {
+	public int insert(String SQL) throws Exception {
 		conectar();
 		PreparedStatement stmt = mBD.prepareStatement(SQL);
 		int res = 0;
