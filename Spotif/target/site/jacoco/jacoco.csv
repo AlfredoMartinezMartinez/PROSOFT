@@ -26,7 +26,7 @@ Spotif,Dominio,Gestor_pasarela,7,0,0,0,3,0,2,0,2,0
 Spotif,Dominio,Gestor_compra,8,0,0,0,4,0,3,0,3,0
 Spotif,Dominio,GestorMusica,15,0,0,0,7,0,4,0,4,0
 Spotif,Dominio,GestorUsuario,51,0,4,0,17,0,8,0,6,0
-Spotif,Dominio,Usuario,262,39,46,0,71,14,33,7,10,7
+Spotif,Dominio,Usuario,211,90,31,15,60,25,38,2,15,2
 Spotif,Dominio,Musica,33,0,0,0,14,0,7,0,7,0
 Spotif,Dominio,GestorReproductorMusica,37,0,0,0,13,0,7,0,7,0
 Spotif,Dominio,GestorBusqueda,7,0,0,0,3,0,2,0,2,0

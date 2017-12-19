@@ -91,6 +91,7 @@ public class TestAgenteUsuario {
 	public void testSelect() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_select_1 = "SELECT * FROM usuario WHERE login='testLog'";
+		Usuario expected = new Usuario("testNom","testApellido","testLog","testPass","testCorreo","testRol");
 		Usuario u = null;
 		Vector<Object> aux = null;
 		Vector<Object> res = mInstancia.select(SQL_select_1);
@@ -99,9 +100,10 @@ public class TestAgenteUsuario {
 			u = new Usuario((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),
 					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));
 		}
-		assertTrue(u.getNombre().equals("testNom") && u.getApellidos().equals("testApellido")
+	/*	assertTrue(u.getNombre().equals("testNom") && u.getApellidos().equals("testApellido")
 				&& u.getPassword().equals("testPass") && u.getNombre_usuario().equals("testLog")
-				&& u.getCorreo().equals("testCorreo") && u.getRol().equals("testRol"));
+				&& u.getCorreo().equals("testCorreo") && u.getRol().equals("testRol"));*/
+		assertTrue(expected.equals(u));
 
 	}
 
@@ -127,10 +129,4 @@ public class TestAgenteUsuario {
 
 	}
 
-	/*
-	 * 
-	 * 
-	 * 
-	 * @Test public void testDesconectar() { fail("Not yet implemented"); // TODO }
-	 */
-}
+	}
