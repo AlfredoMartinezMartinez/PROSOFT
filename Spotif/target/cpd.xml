@@ -2,9 +2,9 @@
 <pmd-cpd>
    <duplication lines="53" tokens="577">
       <file line="40"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
       <file line="39"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
       <codefragment><![CDATA[        jButtonAdmin = new javax.swing.JButton();
         jlabelfondo = new javax.swing.JLabel();
 
@@ -61,9 +61,9 @@
    </duplication>
    <duplication lines="78" tokens="359">
       <file line="96"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
       <file line="91"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
       <codefragment><![CDATA[        getContentPane().add(jButtonAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 120, 30));
 
         jlabelfondo.setBackground(new java.awt.Color(255, 255, 255));
@@ -145,11 +145,11 @@
    </duplication>
    <duplication lines="16" tokens="152">
       <file line="40"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java"/>
       <file line="47"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java"/>
       <file line="39"
-            path="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
+            path="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_USUARIO.java"/>
       <codefragment><![CDATA[        jButtonAdmin = new javax.swing.JButton();
         jlabelfondo = new javax.swing.JLabel();
 

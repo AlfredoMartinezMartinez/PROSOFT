@@ -55,7 +55,7 @@ public class IU_LOGIN {
 	public IU_LOGIN() {
 		initialize();
 	}
-	
+
 	public JFrame getFrmVentanaLogIn() {
 		return frmLogIn;
 	}
@@ -173,10 +173,10 @@ public class IU_LOGIN {
 						frmLogIn.dispose();
 					}
 					if (tipo.equals("usuario")) {
-						 IU_USUARIO frame2 = new IU_USUARIO();
-						 frame2.setVisible(true);
+						IU_USUARIO frame2 = new IU_USUARIO();
+						frame2.setVisible(true);
 						// frame2.jLabelNusario.setText(jTextFieldUser.getText());
-						 frmLogIn.dispose();
+						frmLogIn.dispose();
 					}
 
 				} else {
@@ -197,7 +197,7 @@ public class IU_LOGIN {
 		public void actionPerformed(ActionEvent e) {
 
 			try {
-				IU_CREARUSUARIO frame =new IU_CREARUSUARIO();
+				IU_CREARUSUARIO frame = new IU_CREARUSUARIO();
 				frame.setVisible(true);
 				frmLogIn.dispose();
 			} catch (Exception e1) {

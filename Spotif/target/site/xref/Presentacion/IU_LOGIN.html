@@ -63,7 +63,7 @@
 <a class="jxr_linenumber" name="L55" href="#L55">55</a>  	<strong class="jxr_keyword">public</strong> <a href="../Presentacion/IU_LOGIN.html">IU_LOGIN</a>() {
 <a class="jxr_linenumber" name="L56" href="#L56">56</a>  		initialize();
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>  	}
-<a class="jxr_linenumber" name="L58" href="#L58">58</a>  	
+<a class="jxr_linenumber" name="L58" href="#L58">58</a>  
 <a class="jxr_linenumber" name="L59" href="#L59">59</a>  	<strong class="jxr_keyword">public</strong> JFrame getFrmVentanaLogIn() {
 <a class="jxr_linenumber" name="L60" href="#L60">60</a>  		<strong class="jxr_keyword">return</strong> frmLogIn;
 <a class="jxr_linenumber" name="L61" href="#L61">61</a>  	}
@@ -181,10 +181,10 @@
 <a class="jxr_linenumber" name="L173" href="#L173">173</a> 						frmLogIn.dispose();
 <a class="jxr_linenumber" name="L174" href="#L174">174</a> 					}
 <a class="jxr_linenumber" name="L175" href="#L175">175</a> 					<strong class="jxr_keyword">if</strong> (tipo.equals(<span class="jxr_string">"usuario"</span>)) {
-<a class="jxr_linenumber" name="L176" href="#L176">176</a> 						 <a href="../Presentacion/IU_USUARIO.html">IU_USUARIO</a> frame2 = <strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_USUARIO.html">IU_USUARIO</a>();
-<a class="jxr_linenumber" name="L177" href="#L177">177</a> 						 frame2.setVisible(<strong class="jxr_keyword">true</strong>);
+<a class="jxr_linenumber" name="L176" href="#L176">176</a> 						IU_USUARIO frame2 = <strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_USUARIO.html">IU_USUARIO</a>();
+<a class="jxr_linenumber" name="L177" href="#L177">177</a> 						frame2.setVisible(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L178" href="#L178">178</a> 						<em class="jxr_comment">// frame2.jLabelNusario.setText(jTextFieldUser.getText());</em>
-<a class="jxr_linenumber" name="L179" href="#L179">179</a> 						 frmLogIn.dispose();
+<a class="jxr_linenumber" name="L179" href="#L179">179</a> 						frmLogIn.dispose();
 <a class="jxr_linenumber" name="L180" href="#L180">180</a> 					}
 <a class="jxr_linenumber" name="L181" href="#L181">181</a> 
 <a class="jxr_linenumber" name="L182" href="#L182">182</a> 				} <strong class="jxr_keyword">else</strong> {
@@ -205,7 +205,7 @@
 <a class="jxr_linenumber" name="L197" href="#L197">197</a> 		<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> actionPerformed(ActionEvent e) {
 <a class="jxr_linenumber" name="L198" href="#L198">198</a> 
 <a class="jxr_linenumber" name="L199" href="#L199">199</a> 			<strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L200" href="#L200">200</a> 				IU_CREARUSUARIO frame =<strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>();
+<a class="jxr_linenumber" name="L200" href="#L200">200</a> 				IU_CREARUSUARIO frame = <strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>();
 <a class="jxr_linenumber" name="L201" href="#L201">201</a> 				frame.setVisible(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L202" href="#L202">202</a> 				frmLogIn.dispose();
 <a class="jxr_linenumber" name="L203" href="#L203">203</a> 			} <strong class="jxr_keyword">catch</strong> (Exception e1) {

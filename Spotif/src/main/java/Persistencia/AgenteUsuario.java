@@ -84,7 +84,9 @@ public class AgenteUsuario {
 		} catch (SQLException e) {
 			if (e instanceof SQLIntegrityConstraintViolationException) {
 				System.out.println("cliente existe");
-			} else {
+			} 
+			if(e instanceof SQLSyntaxErrorException) {
+				System.out.println("Error de sintaxis");
 			}
 		}
 		return res;
@@ -162,5 +164,4 @@ public class AgenteUsuario {
 		return vec;
 	}
 
-	
 }

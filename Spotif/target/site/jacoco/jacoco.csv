@@ -1,0 +1,33 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Spotif,Persistencia,Agente_Musica,30,0,2,0,14,0,6,0,5,0
+Spotif,Persistencia,AgenteUsuario,0,152,0,8,0,52,0,13,0,9
+Spotif,Presentacion,IU_ADMINISTRADOR,475,0,6,0,92,0,10,0,7,0
+Spotif,Presentacion,IU_CREARUSUARIO,712,0,6,0,119,0,9,0,6,0
+Spotif,Presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_USUARIO,445,0,6,0,88,0,10,0,7,0
+Spotif,Presentacion,IU_USUARIO.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_ADMINISTRADOR.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_LOGIN.BtnNuevoUsuarioActionListener,22,0,0,0,8,0,2,0,2,0
+Spotif,Presentacion,IU_LOGIN.BtnInicoSesionActionListener,86,0,6,0,22,0,5,0,2,0
+Spotif,Presentacion,IU_CREARUSUARIO.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,Presentacion,IU_LOGIN,581,0,0,0,85,0,4,0,4,0
+Spotif,Presentacion,IU_LOGIN.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
+Spotif,Dominio,Gestor_pasarela,7,0,0,0,3,0,2,0,2,0
+Spotif,Dominio,Gestor_compra,8,0,0,0,4,0,3,0,3,0
+Spotif,Dominio,GestorMusica,15,0,0,0,7,0,4,0,4,0
+Spotif,Dominio,GestorUsuario,51,0,4,0,17,0,8,0,6,0
+Spotif,Dominio,Usuario,262,39,46,0,71,14,33,7,10,7
+Spotif,Dominio,Musica,33,0,0,0,14,0,7,0,7,0
+Spotif,Dominio,GestorReproductorMusica,37,0,0,0,13,0,7,0,7,0
+Spotif,Dominio,GestorBusqueda,7,0,0,0,3,0,2,0,2,0
+Spotif,Dominio,GestorListas,7,0,0,0,3,0,2,0,2,0

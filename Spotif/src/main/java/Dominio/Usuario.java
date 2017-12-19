@@ -61,8 +61,7 @@ public class Usuario {
 	 * @throws Exception
 	 *             Control de error
 	 */
-	public static Usuario read(String nombre_usuario, String password) throws Exception {
-		String l, g;
+	public static Usuario read(String nombre_usuario, String password) throws Exception {		
 		Usuario u = null;
 		Vector<Object> aux = null;
 		String SQL_Consulta = "SELECT nombre, apellidos, login, password, correo, tipo FROM usuario WHERE login = '"
@@ -139,6 +138,88 @@ public class Usuario {
 	 */
 	public void setRol(String rol) {
 		this.rol = rol;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public String getNombre_usuario() {
+		return nombre_usuario;
+	}
+
+	public void setNombre_usuario(String nombre_usuario) {
+		this.nombre_usuario = nombre_usuario;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getCorreo() {
+		return correo;
+	}
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Usuario other = (Usuario) obj;
+		if (apellidos == null) {
+			if (other.apellidos != null)
+				return false;
+		} else if (!apellidos.equals(other.apellidos))
+			return false;
+		if (correo == null) {
+			if (other.correo != null)
+				return false;
+		} else if (!correo.equals(other.correo))
+			return false;
+		if (nombre == null) {
+			if (other.nombre != null)
+				return false;
+		} else if (!nombre.equals(other.nombre))
+			return false;
+		if (nombre_usuario == null) {
+			if (other.nombre_usuario != null)
+				return false;
+		} else if (!nombre_usuario.equals(other.nombre_usuario))
+			return false;
+		if (password == null) {
+			if (other.password != null)
+				return false;
+		} else if (!password.equals(other.password))
+			return false;
+		if (rol == null) {
+			if (other.rol != null)
+				return false;
+		} else if (!rol.equals(other.rol))
+			return false;
+		return true;
 	}
 
 }
