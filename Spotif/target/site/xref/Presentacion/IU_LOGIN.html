@@ -35,7 +35,7 @@
 <a class="jxr_linenumber" name="L27" href="#L27">27</a>  	<strong class="jxr_keyword">private</strong> JLabel lblNombreUsario;
 <a class="jxr_linenumber" name="L28" href="#L28">28</a>  	<strong class="jxr_keyword">private</strong> JLabel lblContraseaUsuario;
 <a class="jxr_linenumber" name="L29" href="#L29">29</a>  	<strong class="jxr_keyword">private</strong> JTextField txtNombre;
-<a class="jxr_linenumber" name="L30" href="#L30">30</a>  	<strong class="jxr_keyword">private</strong> JPasswordField pswContraseña;
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  	<strong class="jxr_keyword">private</strong> JPasswordField pswPass;
 <a class="jxr_linenumber" name="L31" href="#L31">31</a>  	<strong class="jxr_keyword">private</strong> JButton btnNuevoUsuario;
 <a class="jxr_linenumber" name="L32" href="#L32">32</a>  	<strong class="jxr_keyword">private</strong> JButton btnInicoSesion;
 <a class="jxr_linenumber" name="L33" href="#L33">33</a>  	<strong class="jxr_keyword">private</strong> JLabel lblNewLabel;
@@ -132,14 +132,14 @@
 <a class="jxr_linenumber" name="L124" href="#L124">124</a> 		gbc_lblContraseaUsuario.gridy = 4;
 <a class="jxr_linenumber" name="L125" href="#L125">125</a> 		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);
 <a class="jxr_linenumber" name="L126" href="#L126">126</a> 
-<a class="jxr_linenumber" name="L127" href="#L127">127</a> 		pswContraseña = <strong class="jxr_keyword">new</strong> JPasswordField();
-<a class="jxr_linenumber" name="L128" href="#L128">128</a> 		GridBagConstraints gbc_pswContraseña = <strong class="jxr_keyword">new</strong> GridBagConstraints();
-<a class="jxr_linenumber" name="L129" href="#L129">129</a> 		gbc_pswContraseña.gridwidth = 5;
-<a class="jxr_linenumber" name="L130" href="#L130">130</a> 		gbc_pswContraseña.insets = <strong class="jxr_keyword">new</strong> Insets(0, 0, 5, 5);
-<a class="jxr_linenumber" name="L131" href="#L131">131</a> 		gbc_pswContraseña.fill = GridBagConstraints.HORIZONTAL;
-<a class="jxr_linenumber" name="L132" href="#L132">132</a> 		gbc_pswContraseña.gridx = 6;
-<a class="jxr_linenumber" name="L133" href="#L133">133</a> 		gbc_pswContraseña.gridy = 4;
-<a class="jxr_linenumber" name="L134" href="#L134">134</a> 		panel.add(pswContraseña, gbc_pswContraseña);
+<a class="jxr_linenumber" name="L127" href="#L127">127</a> 		pswPass = <strong class="jxr_keyword">new</strong> JPasswordField();
+<a class="jxr_linenumber" name="L128" href="#L128">128</a> 		GridBagConstraints gbc_pswPass = <strong class="jxr_keyword">new</strong> GridBagConstraints();
+<a class="jxr_linenumber" name="L129" href="#L129">129</a> 		gbc_pswPass.gridwidth = 5;
+<a class="jxr_linenumber" name="L130" href="#L130">130</a> 		gbc_pswPass.insets = <strong class="jxr_keyword">new</strong> Insets(0, 0, 5, 5);
+<a class="jxr_linenumber" name="L131" href="#L131">131</a> 		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;
+<a class="jxr_linenumber" name="L132" href="#L132">132</a> 		gbc_pswPass.gridx = 6;
+<a class="jxr_linenumber" name="L133" href="#L133">133</a> 		gbc_pswPass.gridy = 4;
+<a class="jxr_linenumber" name="L134" href="#L134">134</a> 		panel.add(pswPass, gbc_pswPass);
 <a class="jxr_linenumber" name="L135" href="#L135">135</a> 
 <a class="jxr_linenumber" name="L136" href="#L136">136</a> 		btnInicoSesion = <strong class="jxr_keyword">new</strong> JButton(<span class="jxr_string">"InicioSesion"</span>);
 <a class="jxr_linenumber" name="L137" href="#L137">137</a> 		btnInicoSesion.addActionListener(<strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_LOGIN.html">BtnInicoSesionActionListener</a>());
@@ -167,12 +167,12 @@
 <a class="jxr_linenumber" name="L159" href="#L159">159</a> 		<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> actionPerformed(ActionEvent arg0) {
 <a class="jxr_linenumber" name="L160" href="#L160">160</a> 			<strong class="jxr_keyword">try</strong> {
 <a class="jxr_linenumber" name="L161" href="#L161">161</a> 				<strong class="jxr_keyword">boolean</strong> autenticar1 = GestorUsuario.login(txtNombre.getText(),
-<a class="jxr_linenumber" name="L162" href="#L162">162</a> 						String.valueOf(pswContraseña.getPassword()));
+<a class="jxr_linenumber" name="L162" href="#L162">162</a> 						String.valueOf(pswPass.getPassword()));
 <a class="jxr_linenumber" name="L163" href="#L163">163</a> 
 <a class="jxr_linenumber" name="L164" href="#L164">164</a> 				<strong class="jxr_keyword">if</strong> (autenticar1) {
 <a class="jxr_linenumber" name="L165" href="#L165">165</a> 
 <a class="jxr_linenumber" name="L166" href="#L166">166</a> 					lblNombre.setText(<span class="jxr_string">"Usuario registrado"</span>);
-<a class="jxr_linenumber" name="L167" href="#L167">167</a> 					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswContraseña.getPassword()));
+<a class="jxr_linenumber" name="L167" href="#L167">167</a> 					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));
 <a class="jxr_linenumber" name="L168" href="#L168">168</a> 					<strong class="jxr_keyword">if</strong> (tipo.equals(<span class="jxr_string">"admin"</span>)) {
 <a class="jxr_linenumber" name="L169" href="#L169">169</a> 
 <a class="jxr_linenumber" name="L170" href="#L170">170</a> 						IU_ADMINISTRADOR frame = <strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_ADMINISTRADOR.html">IU_ADMINISTRADOR</a>();
@@ -191,7 +191,7 @@
 <a class="jxr_linenumber" name="L183" href="#L183">183</a> 
 <a class="jxr_linenumber" name="L184" href="#L184">184</a> 					lblNombre.setText(<span class="jxr_string">"Usuario o contraseña incorrecta"</span>);
 <a class="jxr_linenumber" name="L185" href="#L185">185</a> 					txtNombre.setText(<span class="jxr_string">""</span>);
-<a class="jxr_linenumber" name="L186" href="#L186">186</a> 					pswContraseña.setText(<span class="jxr_string">""</span>);
+<a class="jxr_linenumber" name="L186" href="#L186">186</a> 					pswPass.setText(<span class="jxr_string">""</span>);
 <a class="jxr_linenumber" name="L187" href="#L187">187</a> 
 <a class="jxr_linenumber" name="L188" href="#L188">188</a> 				}
 <a class="jxr_linenumber" name="L189" href="#L189">189</a> 			} <strong class="jxr_keyword">catch</strong> (Exception e) {

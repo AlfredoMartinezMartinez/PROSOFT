@@ -27,7 +27,7 @@ public class IU_LOGIN {
 	private JLabel lblNombreUsario;
 	private JLabel lblContraseaUsuario;
 	private JTextField txtNombre;
-	private JPasswordField pswContrase�a;
+	private JPasswordField pswPass;
 	private JButton btnNuevoUsuario;
 	private JButton btnInicoSesion;
 	private JLabel lblNewLabel;
@@ -124,14 +124,14 @@ public class IU_LOGIN {
 <span class="nc" id="L124">		gbc_lblContraseaUsuario.gridy = 4;</span>
 <span class="nc" id="L125">		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);</span>
 
-<span class="nc" id="L127">		pswContrase�a = new JPasswordField();</span>
-<span class="nc" id="L128">		GridBagConstraints gbc_pswContrase�a = new GridBagConstraints();</span>
-<span class="nc" id="L129">		gbc_pswContrase�a.gridwidth = 5;</span>
-<span class="nc" id="L130">		gbc_pswContrase�a.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L131">		gbc_pswContrase�a.fill = GridBagConstraints.HORIZONTAL;</span>
-<span class="nc" id="L132">		gbc_pswContrase�a.gridx = 6;</span>
-<span class="nc" id="L133">		gbc_pswContrase�a.gridy = 4;</span>
-<span class="nc" id="L134">		panel.add(pswContrase�a, gbc_pswContrase�a);</span>
+<span class="nc" id="L127">		pswPass = new JPasswordField();</span>
+<span class="nc" id="L128">		GridBagConstraints gbc_pswPass = new GridBagConstraints();</span>
+<span class="nc" id="L129">		gbc_pswPass.gridwidth = 5;</span>
+<span class="nc" id="L130">		gbc_pswPass.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L131">		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L132">		gbc_pswPass.gridx = 6;</span>
+<span class="nc" id="L133">		gbc_pswPass.gridy = 4;</span>
+<span class="nc" id="L134">		panel.add(pswPass, gbc_pswPass);</span>
 
 <span class="nc" id="L136">		btnInicoSesion = new JButton(&quot;InicioSesion&quot;);</span>
 <span class="nc" id="L137">		btnInicoSesion.addActionListener(new BtnInicoSesionActionListener());</span>
@@ -159,12 +159,12 @@ public class IU_LOGIN {
 		public void actionPerformed(ActionEvent arg0) {
 			try {
 <span class="nc" id="L161">				boolean autenticar1 = GestorUsuario.login(txtNombre.getText(),</span>
-<span class="nc" id="L162">						String.valueOf(pswContrase�a.getPassword()));</span>
+<span class="nc" id="L162">						String.valueOf(pswPass.getPassword()));</span>
 
 <span class="nc bnc" id="L164" title="All 2 branches missed.">				if (autenticar1) {</span>
 
 <span class="nc" id="L166">					lblNombre.setText(&quot;Usuario registrado&quot;);</span>
-<span class="nc" id="L167">					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswContrase�a.getPassword()));</span>
+<span class="nc" id="L167">					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));</span>
 <span class="nc bnc" id="L168" title="All 2 branches missed.">					if (tipo.equals(&quot;admin&quot;)) {</span>
 
 <span class="nc" id="L170">						IU_ADMINISTRADOR frame = new IU_ADMINISTRADOR();</span>
@@ -183,7 +183,7 @@ public class IU_LOGIN {
 
 <span class="nc" id="L184">					lblNombre.setText(&quot;Usuario o contrase�a incorrecta&quot;);</span>
 <span class="nc" id="L185">					txtNombre.setText(&quot;&quot;);</span>
-<span class="nc" id="L186">					pswContrase�a.setText(&quot;&quot;);</span>
+<span class="nc" id="L186">					pswPass.setText(&quot;&quot;);</span>
 
 				}
 <span class="nc" id="L189">			} catch (Exception e) {</span>

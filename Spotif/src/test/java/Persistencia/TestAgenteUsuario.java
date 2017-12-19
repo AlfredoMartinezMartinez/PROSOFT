@@ -27,12 +27,12 @@ public class TestAgenteUsuario {
 	public void setUp() throws Exception {
 	}
 
-	@Test
-	public void testGetAgente() throws Exception, SQLException {
-		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
-		//
-		assertTrue(mInstancia != null);
-	}
+	/**
+	 * Test que devuelve verdadero si se ha introducido correctamente el usuario
+	 * 
+	 * @throws Exception control de errores
+	 * @throws SQLException error sintaxis
+	 */
 
 	@Test
 	public void testInsert() throws Exception, SQLException {
@@ -42,6 +42,8 @@ public class TestAgenteUsuario {
 		int obtenido = mInstancia.insert(SQL_insert_1);
 		assertTrue(esperado == obtenido);
 	}
+	
+	
 
 	@Test
 	public void testInsert2() throws Exception {

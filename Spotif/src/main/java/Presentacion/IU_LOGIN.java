@@ -27,7 +27,7 @@ public class IU_LOGIN {
 	private JLabel lblNombreUsario;
 	private JLabel lblContraseaUsuario;
 	private JTextField txtNombre;
-	private JPasswordField pswContraseña;
+	private JPasswordField pswPass;
 	private JButton btnNuevoUsuario;
 	private JButton btnInicoSesion;
 	private JLabel lblNewLabel;
@@ -124,14 +124,14 @@ public class IU_LOGIN {
 		gbc_lblContraseaUsuario.gridy = 4;
 		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);
 
-		pswContraseña = new JPasswordField();
-		GridBagConstraints gbc_pswContraseña = new GridBagConstraints();
-		gbc_pswContraseña.gridwidth = 5;
-		gbc_pswContraseña.insets = new Insets(0, 0, 5, 5);
-		gbc_pswContraseña.fill = GridBagConstraints.HORIZONTAL;
-		gbc_pswContraseña.gridx = 6;
-		gbc_pswContraseña.gridy = 4;
-		panel.add(pswContraseña, gbc_pswContraseña);
+		pswPass = new JPasswordField();
+		GridBagConstraints gbc_pswPass = new GridBagConstraints();
+		gbc_pswPass.gridwidth = 5;
+		gbc_pswPass.insets = new Insets(0, 0, 5, 5);
+		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;
+		gbc_pswPass.gridx = 6;
+		gbc_pswPass.gridy = 4;
+		panel.add(pswPass, gbc_pswPass);
 
 		btnInicoSesion = new JButton("InicioSesion");
 		btnInicoSesion.addActionListener(new BtnInicoSesionActionListener());
@@ -159,12 +159,12 @@ public class IU_LOGIN {
 		public void actionPerformed(ActionEvent arg0) {
 			try {
 				boolean autenticar1 = GestorUsuario.login(txtNombre.getText(),
-						String.valueOf(pswContraseña.getPassword()));
+						String.valueOf(pswPass.getPassword()));
 
 				if (autenticar1) {
 
 					lblNombre.setText("Usuario registrado");
-					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswContraseña.getPassword()));
+					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));
 					if (tipo.equals("admin")) {
 
 						IU_ADMINISTRADOR frame = new IU_ADMINISTRADOR();
@@ -183,7 +183,7 @@ public class IU_LOGIN {
 
 					lblNombre.setText("Usuario o contraseña incorrecta");
 					txtNombre.setText("");
-					pswContraseña.setText("");
+					pswPass.setText("");
 
 				}
 			} catch (Exception e) {

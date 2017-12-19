@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="Persistencia.TestAgenteUsuario" time="1.148" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="Persistencia.TestAgenteUsuario" time="1.291" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\mpm_7\Desktop\eclipseworkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7991709740098259212.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\mpm_7\Desktop\eclipseworkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8071451354359132417.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_144/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_144/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_144/bin/../jre/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\apache-maven-3.5.0\bin;C:\jflex-1.6.1\bin;C:\Javalib;C:\WINDOWS\system32,C:\Program Files\Java\jdk1.8.0_144\bin;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\mpm_7\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\mpm_7\AppData\Local\GitHubDesktop\bin;C:\Users\mpm_7\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,13 +61,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testGetAgente" time="0.803"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert" time="0.075"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert2" time="0.011"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert3" time="0.013"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testSelect" time="0.009"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testUpdate" time="0.159"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testUpdate2" time="0.015"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testZDelete" time="0.062"/>
-  <testcase classname="Persistencia.TestAgenteUsuario" name="testZDelete2" time="0.001"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert" time="1.154"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert2" time="0"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert3" time="0.018"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testInsert4" time="0.007"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testSelect" time="0"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testUpdate" time="0.058"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testUpdate2" time="0.009"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testZDelete" time="0.043"/>
+  <testcase classname="Persistencia.TestAgenteUsuario" name="testZDelete2" time="0.002"/>
 </testsuite>
