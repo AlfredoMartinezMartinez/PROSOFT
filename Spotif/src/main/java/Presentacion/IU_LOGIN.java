@@ -65,7 +65,7 @@ public class IU_LOGIN {
 	 */
 	private void initialize() {
 		frmLogIn = new JFrame();
-		frmLogIn.setTitle("Log In");
+		frmLogIn.setTitle("Prosoft");
 		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_LOGIN.class.getResource(
 				"/presentacion/ProSoft_SinFondo (1)-iloveimg-resized-iloveimg-resized-iloveimg-resized.png")));
 		frmLogIn.setBounds(100, 100, 822, 323);
@@ -92,7 +92,7 @@ public class IU_LOGIN {
 		gbc_lblNewLabel.gridy = 1;
 		panel.add(lblNewLabel, gbc_lblNewLabel);
 
-		lblNombreUsario = new JLabel("Nombre Usuario");
+		lblNombreUsario = new JLabel("Name:");
 		GridBagConstraints gbc_lblNombreUsario = new GridBagConstraints();
 		gbc_lblNombreUsario.insets = new Insets(0, 0, 5, 5);
 		gbc_lblNombreUsario.gridx = 4;
@@ -100,6 +100,7 @@ public class IU_LOGIN {
 		panel.add(lblNombreUsario, gbc_lblNombreUsario);
 
 		txtNombre = new JTextField();
+		txtNombre.addActionListener(new TxtNombreActionListener());
 		GridBagConstraints gbc_txtNombre = new GridBagConstraints();
 		gbc_txtNombre.gridwidth = 5;
 		gbc_txtNombre.insets = new Insets(0, 0, 5, 5);
@@ -117,7 +118,7 @@ public class IU_LOGIN {
 		gbc_lblNombre.gridy = 2;
 		panel.add(lblNombre, gbc_lblNombre);
 
-		lblContraseaUsuario = new JLabel("Contraseña Usuario");
+		lblContraseaUsuario = new JLabel("Password:");
 		GridBagConstraints gbc_lblContraseaUsuario = new GridBagConstraints();
 		gbc_lblContraseaUsuario.insets = new Insets(0, 0, 5, 5);
 		gbc_lblContraseaUsuario.gridx = 4;
@@ -125,6 +126,7 @@ public class IU_LOGIN {
 		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);
 
 		pswPass = new JPasswordField();
+		pswPass.addActionListener(new PswPassActionListener());
 		GridBagConstraints gbc_pswPass = new GridBagConstraints();
 		gbc_pswPass.gridwidth = 5;
 		gbc_pswPass.insets = new Insets(0, 0, 5, 5);
@@ -153,6 +155,8 @@ public class IU_LOGIN {
 		gbc_btnNuevoUsuario.gridx = 8;
 		gbc_btnNuevoUsuario.gridy = 6;
 		panel.add(btnNuevoUsuario, gbc_btnNuevoUsuario);
+		btnInicoSesion.setEnabled(false);
+		pswPass.setEnabled(false);
 	}
 
 	private class BtnInicoSesionActionListener implements ActionListener {
@@ -181,7 +185,7 @@ public class IU_LOGIN {
 
 				} else {
 
-					lblNombre.setText("Usuario o contraseña incorrecta");
+					lblNombre.setText("Usuario o contraseï¿½a incorrecta");
 					txtNombre.setText("");
 					pswPass.setText("");
 
@@ -204,6 +208,16 @@ public class IU_LOGIN {
 				e1.printStackTrace();
 			} // fin catch
 
+		}
+	}
+	private class TxtNombreActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			pswPass.setEnabled(true);
+		}
+	}
+	private class PswPassActionListener implements ActionListener {
+		public void actionPerformed(ActionEvent e) {
+			btnInicoSesion.setEnabled(true);
 		}
 	}
 

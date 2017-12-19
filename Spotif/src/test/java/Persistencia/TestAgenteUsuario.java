@@ -85,6 +85,14 @@ public class TestAgenteUsuario {
 		String SQL_update_2 = "Modifica nombre testNom por TestNom2";
 		mInstancia.update(SQL_update_2);
 	}
+	
+	@Test(expected = SQLException.class)
+	public void testUpdate3() throws Exception {
+		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
+		String SQL_update_3 = null;
+		mInstancia.update(SQL_update_3);
+	}
+
 
 	@Test
 	public void testSelect() throws Exception {
@@ -99,14 +107,24 @@ public class TestAgenteUsuario {
 			u = new Usuario((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),
 					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));
 		}
-		/*
-		 * assertTrue(u.getNombre().equals("testNom") &&
-		 * u.getApellidos().equals("testApellido") && u.getPassword().equals("testPass")
-		 * && u.getNombre_usuario().equals("testLog") &&
-		 * u.getCorreo().equals("testCorreo") && u.getRol().equals("testRol"));
-		 */
 		assertTrue(expected.equals(u));
 
+	}
+	
+	
+	@Test(expected = SQLException.class)
+	public void testSelect2() throws Exception {
+		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
+		String SQL_select_2 = "Dame los datos de 456";
+		mInstancia.update(SQL_select_2);
+	}
+	
+	
+	@Test(expected = SQLException.class)
+	public void testSelect3() throws Exception {
+		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
+		String SQL_select_3 = null;
+		mInstancia.update(SQL_select_3);
 	}
 
 	@Test
@@ -125,5 +143,13 @@ public class TestAgenteUsuario {
 		mInstancia.delete(SQL_delete_2);
 
 	}
+	@Test(expected = SQLException.class)
+	public void testZDelete3() throws Exception, SQLException {
+		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
+		String SQL_delete_3 = null;
+		mInstancia.delete(SQL_delete_3);
+
+	}
+
 
 }
