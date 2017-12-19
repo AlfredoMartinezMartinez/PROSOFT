@@ -65,7 +65,17 @@ public class TestAgenteUsuario {
 			//
 		}
 	}
-
+	@Test
+	public void testInsert4() throws Exception {
+		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
+		String SQL_insert_4 = null;
+		try {
+			mInstancia.insert(SQL_insert_4);
+		} catch (SQLException e) {
+			//
+		}
+	}
+	
 	@Test
 	public void testUpdate() throws Exception, SQLException {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
