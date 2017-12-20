@@ -37,7 +37,7 @@ public class TestAgenteUsuario {
 	 */
 
 	@Test
-	public void testInsert() throws Exception, SQLException {
+	public void testInsert() throws Exception{
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_insert_1 = "INSERT INTO usuario VALUES('testNom','testApellido','testLog','testPass','testCorreo','testRol')";
 		int esperado = 1;
@@ -68,6 +68,7 @@ public class TestAgenteUsuario {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_insert_4 = null;
 		mInstancia.insert(SQL_insert_4);
+		fail("Para SQL nula la prueba debe pasar");
 	}
 
 	@Test
@@ -84,6 +85,7 @@ public class TestAgenteUsuario {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_update_2 = "Modifica nombre testNom por TestNom2";
 		mInstancia.update(SQL_update_2);
+		fail("Para SQL con sintaxis incorrecta la prueba debe pasar");
 	}
 	
 	@Test(expected = SQLException.class)
@@ -91,6 +93,7 @@ public class TestAgenteUsuario {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_update_3 = null;
 		mInstancia.update(SQL_update_3);
+		fail("Para SQL nula la prueba debe pasar");
 	}
 
 
@@ -117,6 +120,7 @@ public class TestAgenteUsuario {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_select_2 = "Dame los datos de 456";
 		mInstancia.update(SQL_select_2);
+		fail("Para sintaxis incorrecta la prueba debe pasar");
 	}
 	
 	
@@ -125,10 +129,11 @@ public class TestAgenteUsuario {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_select_3 = null;
 		mInstancia.update(SQL_select_3);
+		fail("Para SQL nula la prueba debe pasar");
 	}
 
 	@Test
-	public void testZDelete() throws Exception, SQLException {
+	public void testZDelete() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_delete_1 = "DELETE FROM `spotif`.`usuario` WHERE `login`='testLog';";
 		int esperado = 1;
@@ -137,17 +142,19 @@ public class TestAgenteUsuario {
 	}
 
 	@Test(expected = SQLException.class)
-	public void testZDelete2() throws Exception, SQLException {
+	public void testZDelete2() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_delete_2 = "Adios Test";
 		mInstancia.delete(SQL_delete_2);
+		fail("Para Sintaxis incorrecta la prueba debe pasar");
 
 	}
 	@Test(expected = SQLException.class)
-	public void testZDelete3() throws Exception, SQLException {
+	public void testZDelete3() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
 		String SQL_delete_3 = null;
 		mInstancia.delete(SQL_delete_3);
+		fail("Para SQL nula la prueba debe pasar");
 
 	}
 

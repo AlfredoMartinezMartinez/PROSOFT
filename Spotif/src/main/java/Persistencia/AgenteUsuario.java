@@ -67,8 +67,7 @@ public class AgenteUsuario {
 	 * @param SQL
 	 *            Intruccion SQL de insercion de usuario
 	 * @return res Parametro del resultado de la insercion
-	 * @throws SQLException
-	 *             Control de Errores SQL
+	 * 
 	 * @throws Exception
 	 *             Control de Errores
 	 */
@@ -145,10 +144,10 @@ public class AgenteUsuario {
 	 *             Control de Errores
 	 */
 	public Vector<Object> select(String SQL) throws SQLException, Exception {
-		PreparedStatement select = mBD.prepareStatement(SQL);
-		ResultSet s = select.executeQuery();
+		PreparedStatement stmt = mBD.prepareStatement(SQL);
+		ResultSet s = stmt.executeQuery();
 		Vector<Object> vec = new Vector<Object>();
-		Vector<Object> auxiliar;
+		Vector<Object> auxiliar=null;
 		while (s.next()) {
 			auxiliar = new Vector<Object>();
 			auxiliar.add((String) s.getString("nombre"));
@@ -160,7 +159,7 @@ public class AgenteUsuario {
 			vec.add((Vector) auxiliar);
 
 		}
-		s.close();
+		stmt.close();
 		return vec;
 	}
 
