@@ -61,7 +61,7 @@ public class Usuario {
 	 * @throws Exception
 	 *             Control de error
 	 */
-	public static Usuario read(String nombre_usuario, String password) throws Exception {		
+	public static Usuario read(String nombre_usuario, String password) throws Exception {
 		Usuario u = null;
 		Vector<Object> aux = null;
 		String SQL_Consulta = "SELECT nombre, apellidos, login, password, correo, tipo FROM usuario WHERE login = '"
@@ -102,40 +102,25 @@ public class Usuario {
 			throws Exception {
 		int PersonalCorrecto = 0;
 		AgenteUsuario agent = AgenteUsuario.getAgente();
-		agent.insert("INSERT INTO usuario VALUES('" + nombre + "','" + apellidos + "','" + login + "','" + pass + "','"
-				+ correo + "','" + rol + "');");
-		if (GestorUsuario.login(nombre, pass)) {
-			PersonalCorrecto = 1;
+		int num = agent.insert("INSERT INTO usuario VALUES('" + nombre + "','" + apellidos + "','" + login + "','"
+				+ pass + "','" + correo + "','" + rol + "');");
+		if (num != PersonalCorrecto) {
+			if (GestorUsuario.login(login, pass)) {
+				PersonalCorrecto = 1;
+			}
 		}
 		return PersonalCorrecto;
 
-		/*
-		 * Debe implementarse la l�gica para insertar el contenido de un objeto
-		 * personal en la base de datos Los objetos de la capa de dominio se comunican
-		 * con el agente para enviarle sus peticiones AYUDA1: la consulta para realizar
-		 * la inserci�n es la siguiente
-		 * "INSERT INTO personal VALUES('"+this.mLogin+"','"+this.mPassword+"');"
-		 * AYUDA2: Del mismo modo que para consultar la informaci�n, el agente provee
-		 * de un m�todo "select", para hacer una inserci�n el agente provee de un
-		 * m�todo "insert"
-		 */
 	}
 
 	/**
-	 * Metodo que devuelve el tipo de usuario
+	 * Metodos Getters/Setters
 	 * 
-	 * @return rol Devuelve el rol del usuario
 	 */
 	public String getRol() {
 		return rol;
 	}
 
-	/**
-	 * Metodo que permite establecer el tipo de usuario
-	 * 
-	 * @param rol
-	 *            Cambia rol del usuario
-	 */
 	public void setRol(String rol) {
 		this.rol = rol;
 	}
@@ -180,6 +165,9 @@ public class Usuario {
 		this.correo = correo;
 	}
 
+	/**
+	 * metodo equals para comparar dos objetos usuario
+	 */
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

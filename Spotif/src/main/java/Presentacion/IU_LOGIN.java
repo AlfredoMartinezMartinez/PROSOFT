@@ -185,7 +185,7 @@ public class IU_LOGIN {
 
 				} else {
 
-					lblNombre.setText("Usuario o contrase�a incorrecta");
+					lblNombre.setText("Usuario o password incorrecto");
 					txtNombre.setText("");
 					pswPass.setText("");
 

@@ -71,14 +71,14 @@ public class AgenteUsuario {
 	 * @throws Exception
 	 *             Control de Errores
 	 */
-	public int insert(String SQL) throws Exception {
+	public int insert(String SQL) throws SQLException,Exception {
 		conectar();
 		PreparedStatement stmt = mBD.prepareStatement(SQL);
 		int res = 0;
 		try {
 			res = stmt.executeUpdate();
 			stmt.close();
-			desconectar();
+			//desconectar();
 
 		} catch (SQLException e) {
 			if (e instanceof SQLIntegrityConstraintViolationException) {
@@ -86,7 +86,7 @@ public class AgenteUsuario {
 			} 
 			if(e instanceof SQLSyntaxErrorException) {
 				System.out.println("Error de sintaxis");
-			}
+			}			
 		}
 		return res;
 	}
@@ -159,7 +159,7 @@ public class AgenteUsuario {
 			vec.add((Vector) auxiliar);
 
 		}
-		stmt.close();
+		stmt.close();		
 		return vec;
 	}
 
