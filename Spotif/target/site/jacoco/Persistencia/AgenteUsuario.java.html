@@ -67,29 +67,28 @@ public class AgenteUsuario {
 	 * @param SQL
 	 *            Intruccion SQL de insercion de usuario
 	 * @return res Parametro del resultado de la insercion
-	 * @throws SQLException
-	 *             Control de Errores SQL
+	 * 
 	 * @throws Exception
 	 *             Control de Errores
 	 */
-	public int insert(String SQL) throws SQLException, Exception {
-<span class="fc" id="L76">		conectar();</span>
-<span class="fc" id="L77">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
-<span class="fc" id="L78">		int res = 0;</span>
+	public int insert(String SQL) throws SQLException,Exception {
+<span class="fc" id="L75">		conectar();</span>
+<span class="fc" id="L76">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L77">		int res = 0;</span>
 		try {
-<span class="fc" id="L80">			res = stmt.executeUpdate();</span>
-<span class="fc" id="L81">			stmt.close();</span>
-<span class="fc" id="L82">			desconectar();</span>
+<span class="fc" id="L79">			res = stmt.executeUpdate();</span>
+<span class="fc" id="L80">			stmt.close();</span>
+			//desconectar();
 
-<span class="fc" id="L84">		} catch (SQLException e) {</span>
-<span class="fc bfc" id="L85" title="All 2 branches covered.">			if (e instanceof SQLIntegrityConstraintViolationException) {</span>
-<span class="fc" id="L86">				System.out.println(&quot;cliente existe&quot;);</span>
+<span class="fc" id="L83">		} catch (SQLException e) {</span>
+<span class="fc bfc" id="L84" title="All 2 branches covered.">			if (e instanceof SQLIntegrityConstraintViolationException) {</span>
+<span class="fc" id="L85">				System.out.println(&quot;cliente existe&quot;);</span>
 			} 
-<span class="fc bfc" id="L88" title="All 2 branches covered.">			if(e instanceof SQLSyntaxErrorException) {</span>
-<span class="fc" id="L89">				System.out.println(&quot;Error de sintaxis&quot;);</span>
-			}
-<span class="fc" id="L91">		}</span>
-<span class="fc" id="L92">		return res;</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">			if(e instanceof SQLSyntaxErrorException) {</span>
+<span class="fc" id="L88">				System.out.println(&quot;Error de sintaxis&quot;);</span>
+			}			
+<span class="fc" id="L90">		}</span>
+<span class="fc" id="L91">		return res;</span>
 	}
 
 	/**
@@ -104,11 +103,11 @@ public class AgenteUsuario {
 	 *             Control de Errores
 	 */
 	public int delete(String SQL) throws SQLException, Exception {
-<span class="fc" id="L107">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
-<span class="fc" id="L108">		int res = stmt.executeUpdate();</span>
-<span class="fc" id="L109">		stmt.close();</span>
-<span class="fc" id="L110">		desconectar();</span>
-<span class="fc" id="L111">		return res;</span>
+<span class="fc" id="L106">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L107">		int res = stmt.executeUpdate();</span>
+<span class="fc" id="L108">		stmt.close();</span>
+<span class="fc" id="L109">		desconectar();</span>
+<span class="fc" id="L110">		return res;</span>
 	}
 
 	/**
@@ -123,12 +122,12 @@ public class AgenteUsuario {
 	 *             Control de Errores
 	 */
 	public int update(String SQL) throws SQLException, Exception {
-<span class="fc" id="L126">		conectar();</span>
-<span class="fc" id="L127">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
-<span class="fc" id="L128">		int res = stmt.executeUpdate();</span>
-<span class="fc" id="L129">		stmt.close();</span>
-<span class="fc" id="L130">		desconectar();</span>
-<span class="fc" id="L131">		return res;</span>
+<span class="fc" id="L125">		conectar();</span>
+<span class="fc" id="L126">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L127">		int res = stmt.executeUpdate();</span>
+<span class="fc" id="L128">		stmt.close();</span>
+<span class="fc" id="L129">		desconectar();</span>
+<span class="fc" id="L130">		return res;</span>
 	}
 
 	/**
@@ -145,23 +144,23 @@ public class AgenteUsuario {
 	 *             Control de Errores
 	 */
 	public Vector&lt;Object&gt; select(String SQL) throws SQLException, Exception {
-<span class="fc" id="L148">		PreparedStatement select = mBD.prepareStatement(SQL);</span>
-<span class="fc" id="L149">		ResultSet s = select.executeQuery();</span>
-<span class="fc" id="L150">		Vector&lt;Object&gt; vec = new Vector&lt;Object&gt;();</span>
-		Vector&lt;Object&gt; auxiliar;
-<span class="fc bfc" id="L152" title="All 2 branches covered.">		while (s.next()) {</span>
-<span class="fc" id="L153">			auxiliar = new Vector&lt;Object&gt;();</span>
-<span class="fc" id="L154">			auxiliar.add((String) s.getString(&quot;nombre&quot;));</span>
-<span class="fc" id="L155">			auxiliar.add((String) s.getString(&quot;apellidos&quot;));</span>
-<span class="fc" id="L156">			auxiliar.add((String) s.getString(&quot;login&quot;));</span>
-<span class="fc" id="L157">			auxiliar.add((String) s.getString(&quot;password&quot;));</span>
-<span class="fc" id="L158">			auxiliar.add((String) s.getString(&quot;correo&quot;));</span>
-<span class="fc" id="L159">			auxiliar.add((String) s.getString(&quot;tipo&quot;));</span>
-<span class="fc" id="L160">			vec.add((Vector) auxiliar);</span>
+<span class="fc" id="L147">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L148">		ResultSet s = stmt.executeQuery();</span>
+<span class="fc" id="L149">		Vector&lt;Object&gt; vec = new Vector&lt;Object&gt;();</span>
+<span class="fc" id="L150">		Vector&lt;Object&gt; auxiliar=null;</span>
+<span class="fc bfc" id="L151" title="All 2 branches covered.">		while (s.next()) {</span>
+<span class="fc" id="L152">			auxiliar = new Vector&lt;Object&gt;();</span>
+<span class="fc" id="L153">			auxiliar.add((String) s.getString(&quot;nombre&quot;));</span>
+<span class="fc" id="L154">			auxiliar.add((String) s.getString(&quot;apellidos&quot;));</span>
+<span class="fc" id="L155">			auxiliar.add((String) s.getString(&quot;login&quot;));</span>
+<span class="fc" id="L156">			auxiliar.add((String) s.getString(&quot;password&quot;));</span>
+<span class="fc" id="L157">			auxiliar.add((String) s.getString(&quot;correo&quot;));</span>
+<span class="fc" id="L158">			auxiliar.add((String) s.getString(&quot;tipo&quot;));</span>
+<span class="fc" id="L159">			vec.add((Vector) auxiliar);</span>
 
 		}
-<span class="fc" id="L163">		s.close();</span>
-<span class="fc" id="L164">		return vec;</span>
+<span class="fc" id="L162">		stmt.close();		</span>
+<span class="fc" id="L163">		return vec;</span>
 	}
 
 }

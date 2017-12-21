@@ -1,1 +1,4 @@
+Dominio\TestUsuario.class
+Dominio\TestUsuarioInsertNull.class
 Persistencia\TestAgenteUsuario.class
+Dominio\TestUsuarioInsertVacio.class

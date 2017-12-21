@@ -65,7 +65,7 @@ public class IU_LOGIN {
 	 */
 	private void initialize() {
 <span class="nc" id="L67">		frmLogIn = new JFrame();</span>
-<span class="nc" id="L68">		frmLogIn.setTitle(&quot;Log In&quot;);</span>
+<span class="nc" id="L68">		frmLogIn.setTitle(&quot;Prosoft&quot;);</span>
 <span class="nc" id="L69">		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(IU_LOGIN.class.getResource(</span>
 				&quot;/presentacion/ProSoft_SinFondo (1)-iloveimg-resized-iloveimg-resized-iloveimg-resized.png&quot;)));
 <span class="nc" id="L71">		frmLogIn.setBounds(100, 100, 822, 323);</span>
@@ -92,7 +92,7 @@ public class IU_LOGIN {
 <span class="nc" id="L92">		gbc_lblNewLabel.gridy = 1;</span>
 <span class="nc" id="L93">		panel.add(lblNewLabel, gbc_lblNewLabel);</span>
 
-<span class="nc" id="L95">		lblNombreUsario = new JLabel(&quot;Nombre Usuario&quot;);</span>
+<span class="nc" id="L95">		lblNombreUsario = new JLabel(&quot;Name:&quot;);</span>
 <span class="nc" id="L96">		GridBagConstraints gbc_lblNombreUsario = new GridBagConstraints();</span>
 <span class="nc" id="L97">		gbc_lblNombreUsario.insets = new Insets(0, 0, 5, 5);</span>
 <span class="nc" id="L98">		gbc_lblNombreUsario.gridx = 4;</span>
@@ -100,111 +100,125 @@ public class IU_LOGIN {
 <span class="nc" id="L100">		panel.add(lblNombreUsario, gbc_lblNombreUsario);</span>
 
 <span class="nc" id="L102">		txtNombre = new JTextField();</span>
-<span class="nc" id="L103">		GridBagConstraints gbc_txtNombre = new GridBagConstraints();</span>
-<span class="nc" id="L104">		gbc_txtNombre.gridwidth = 5;</span>
-<span class="nc" id="L105">		gbc_txtNombre.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L106">		gbc_txtNombre.fill = GridBagConstraints.HORIZONTAL;</span>
-<span class="nc" id="L107">		gbc_txtNombre.gridx = 6;</span>
-<span class="nc" id="L108">		gbc_txtNombre.gridy = 2;</span>
-<span class="nc" id="L109">		panel.add(txtNombre, gbc_txtNombre);</span>
-<span class="nc" id="L110">		txtNombre.setColumns(10);</span>
+<span class="nc" id="L103">		txtNombre.addActionListener(new TxtNombreActionListener());</span>
+<span class="nc" id="L104">		GridBagConstraints gbc_txtNombre = new GridBagConstraints();</span>
+<span class="nc" id="L105">		gbc_txtNombre.gridwidth = 5;</span>
+<span class="nc" id="L106">		gbc_txtNombre.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L107">		gbc_txtNombre.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L108">		gbc_txtNombre.gridx = 6;</span>
+<span class="nc" id="L109">		gbc_txtNombre.gridy = 2;</span>
+<span class="nc" id="L110">		panel.add(txtNombre, gbc_txtNombre);</span>
+<span class="nc" id="L111">		txtNombre.setColumns(10);</span>
 
-<span class="nc" id="L112">		lblNombre = new JLabel(&quot;&quot;);</span>
-<span class="nc" id="L113">		GridBagConstraints gbc_lblNombre = new GridBagConstraints();</span>
-<span class="nc" id="L114">		gbc_lblNombre.anchor = GridBagConstraints.SOUTHWEST;</span>
-<span class="nc" id="L115">		gbc_lblNombre.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L116">		gbc_lblNombre.gridx = 12;</span>
-<span class="nc" id="L117">		gbc_lblNombre.gridy = 2;</span>
-<span class="nc" id="L118">		panel.add(lblNombre, gbc_lblNombre);</span>
+<span class="nc" id="L113">		lblNombre = new JLabel(&quot;&quot;);</span>
+<span class="nc" id="L114">		GridBagConstraints gbc_lblNombre = new GridBagConstraints();</span>
+<span class="nc" id="L115">		gbc_lblNombre.anchor = GridBagConstraints.SOUTHWEST;</span>
+<span class="nc" id="L116">		gbc_lblNombre.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L117">		gbc_lblNombre.gridx = 12;</span>
+<span class="nc" id="L118">		gbc_lblNombre.gridy = 2;</span>
+<span class="nc" id="L119">		panel.add(lblNombre, gbc_lblNombre);</span>
 
-<span class="nc" id="L120">		lblContraseaUsuario = new JLabel(&quot;Contrase�a Usuario&quot;);</span>
-<span class="nc" id="L121">		GridBagConstraints gbc_lblContraseaUsuario = new GridBagConstraints();</span>
-<span class="nc" id="L122">		gbc_lblContraseaUsuario.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L123">		gbc_lblContraseaUsuario.gridx = 4;</span>
-<span class="nc" id="L124">		gbc_lblContraseaUsuario.gridy = 4;</span>
-<span class="nc" id="L125">		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);</span>
+<span class="nc" id="L121">		lblContraseaUsuario = new JLabel(&quot;Password:&quot;);</span>
+<span class="nc" id="L122">		GridBagConstraints gbc_lblContraseaUsuario = new GridBagConstraints();</span>
+<span class="nc" id="L123">		gbc_lblContraseaUsuario.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L124">		gbc_lblContraseaUsuario.gridx = 4;</span>
+<span class="nc" id="L125">		gbc_lblContraseaUsuario.gridy = 4;</span>
+<span class="nc" id="L126">		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);</span>
 
-<span class="nc" id="L127">		pswPass = new JPasswordField();</span>
-<span class="nc" id="L128">		GridBagConstraints gbc_pswPass = new GridBagConstraints();</span>
-<span class="nc" id="L129">		gbc_pswPass.gridwidth = 5;</span>
-<span class="nc" id="L130">		gbc_pswPass.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L131">		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;</span>
-<span class="nc" id="L132">		gbc_pswPass.gridx = 6;</span>
-<span class="nc" id="L133">		gbc_pswPass.gridy = 4;</span>
-<span class="nc" id="L134">		panel.add(pswPass, gbc_pswPass);</span>
+<span class="nc" id="L128">		pswPass = new JPasswordField();</span>
+<span class="nc" id="L129">		pswPass.addActionListener(new PswPassActionListener());</span>
+<span class="nc" id="L130">		GridBagConstraints gbc_pswPass = new GridBagConstraints();</span>
+<span class="nc" id="L131">		gbc_pswPass.gridwidth = 5;</span>
+<span class="nc" id="L132">		gbc_pswPass.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L133">		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L134">		gbc_pswPass.gridx = 6;</span>
+<span class="nc" id="L135">		gbc_pswPass.gridy = 4;</span>
+<span class="nc" id="L136">		panel.add(pswPass, gbc_pswPass);</span>
 
-<span class="nc" id="L136">		btnInicoSesion = new JButton(&quot;InicioSesion&quot;);</span>
-<span class="nc" id="L137">		btnInicoSesion.addActionListener(new BtnInicoSesionActionListener());</span>
-<span class="nc" id="L138">		GridBagConstraints gbc_btnInicoSesion = new GridBagConstraints();</span>
-<span class="nc" id="L139">		gbc_btnInicoSesion.fill = GridBagConstraints.HORIZONTAL;</span>
-<span class="nc" id="L140">		gbc_btnInicoSesion.gridwidth = 2;</span>
-<span class="nc" id="L141">		gbc_btnInicoSesion.anchor = GridBagConstraints.SOUTH;</span>
-<span class="nc" id="L142">		gbc_btnInicoSesion.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L143">		gbc_btnInicoSesion.gridx = 4;</span>
-<span class="nc" id="L144">		gbc_btnInicoSesion.gridy = 6;</span>
-<span class="nc" id="L145">		panel.add(btnInicoSesion, gbc_btnInicoSesion);</span>
+<span class="nc" id="L138">		btnInicoSesion = new JButton(&quot;InicioSesion&quot;);</span>
+<span class="nc" id="L139">		btnInicoSesion.addActionListener(new BtnInicoSesionActionListener());</span>
+<span class="nc" id="L140">		GridBagConstraints gbc_btnInicoSesion = new GridBagConstraints();</span>
+<span class="nc" id="L141">		gbc_btnInicoSesion.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L142">		gbc_btnInicoSesion.gridwidth = 2;</span>
+<span class="nc" id="L143">		gbc_btnInicoSesion.anchor = GridBagConstraints.SOUTH;</span>
+<span class="nc" id="L144">		gbc_btnInicoSesion.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L145">		gbc_btnInicoSesion.gridx = 4;</span>
+<span class="nc" id="L146">		gbc_btnInicoSesion.gridy = 6;</span>
+<span class="nc" id="L147">		panel.add(btnInicoSesion, gbc_btnInicoSesion);</span>
 
-<span class="nc" id="L147">		btnNuevoUsuario = new JButton(&quot;Nuevo Usuario&quot;);</span>
-<span class="nc" id="L148">		btnNuevoUsuario.addActionListener(new BtnNuevoUsuarioActionListener());</span>
-<span class="nc" id="L149">		GridBagConstraints gbc_btnNuevoUsuario = new GridBagConstraints();</span>
-<span class="nc" id="L150">		gbc_btnNuevoUsuario.fill = GridBagConstraints.HORIZONTAL;</span>
-<span class="nc" id="L151">		gbc_btnNuevoUsuario.gridwidth = 3;</span>
-<span class="nc" id="L152">		gbc_btnNuevoUsuario.insets = new Insets(0, 0, 5, 5);</span>
-<span class="nc" id="L153">		gbc_btnNuevoUsuario.gridx = 8;</span>
-<span class="nc" id="L154">		gbc_btnNuevoUsuario.gridy = 6;</span>
-<span class="nc" id="L155">		panel.add(btnNuevoUsuario, gbc_btnNuevoUsuario);</span>
-<span class="nc" id="L156">	}</span>
+<span class="nc" id="L149">		btnNuevoUsuario = new JButton(&quot;Nuevo Usuario&quot;);</span>
+<span class="nc" id="L150">		btnNuevoUsuario.addActionListener(new BtnNuevoUsuarioActionListener());</span>
+<span class="nc" id="L151">		GridBagConstraints gbc_btnNuevoUsuario = new GridBagConstraints();</span>
+<span class="nc" id="L152">		gbc_btnNuevoUsuario.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L153">		gbc_btnNuevoUsuario.gridwidth = 3;</span>
+<span class="nc" id="L154">		gbc_btnNuevoUsuario.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L155">		gbc_btnNuevoUsuario.gridx = 8;</span>
+<span class="nc" id="L156">		gbc_btnNuevoUsuario.gridy = 6;</span>
+<span class="nc" id="L157">		panel.add(btnNuevoUsuario, gbc_btnNuevoUsuario);</span>
+<span class="nc" id="L158">		btnInicoSesion.setEnabled(false);</span>
+<span class="nc" id="L159">		pswPass.setEnabled(false);</span>
+<span class="nc" id="L160">	}</span>
 
-<span class="nc" id="L158">	private class BtnInicoSesionActionListener implements ActionListener {</span>
+<span class="nc" id="L162">	private class BtnInicoSesionActionListener implements ActionListener {</span>
 		public void actionPerformed(ActionEvent arg0) {
 			try {
-<span class="nc" id="L161">				boolean autenticar1 = GestorUsuario.login(txtNombre.getText(),</span>
-<span class="nc" id="L162">						String.valueOf(pswPass.getPassword()));</span>
+<span class="nc" id="L165">				boolean autenticar1 = GestorUsuario.login(txtNombre.getText(),</span>
+<span class="nc" id="L166">						String.valueOf(pswPass.getPassword()));</span>
 
-<span class="nc bnc" id="L164" title="All 2 branches missed.">				if (autenticar1) {</span>
+<span class="nc bnc" id="L168" title="All 2 branches missed.">				if (autenticar1) {</span>
 
-<span class="nc" id="L166">					lblNombre.setText(&quot;Usuario registrado&quot;);</span>
-<span class="nc" id="L167">					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));</span>
-<span class="nc bnc" id="L168" title="All 2 branches missed.">					if (tipo.equals(&quot;admin&quot;)) {</span>
+<span class="nc" id="L170">					lblNombre.setText(&quot;Usuario registrado&quot;);</span>
+<span class="nc" id="L171">					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));</span>
+<span class="nc bnc" id="L172" title="All 2 branches missed.">					if (tipo.equals(&quot;admin&quot;)) {</span>
 
-<span class="nc" id="L170">						IU_ADMINISTRADOR frame = new IU_ADMINISTRADOR();</span>
-<span class="nc" id="L171">						frame.setVisible(true);</span>
+<span class="nc" id="L174">						IU_ADMINISTRADOR frame = new IU_ADMINISTRADOR();</span>
+<span class="nc" id="L175">						frame.setVisible(true);</span>
 						// frame.jLabelNusario.setText(jTextFieldUser.getText());
-<span class="nc" id="L173">						frmLogIn.dispose();</span>
+<span class="nc" id="L177">						frmLogIn.dispose();</span>
 					}
-<span class="nc bnc" id="L175" title="All 2 branches missed.">					if (tipo.equals(&quot;usuario&quot;)) {</span>
-<span class="nc" id="L176">						IU_USUARIO frame2 = new IU_USUARIO();</span>
-<span class="nc" id="L177">						frame2.setVisible(true);</span>
+<span class="nc bnc" id="L179" title="All 2 branches missed.">					if (tipo.equals(&quot;usuario&quot;)) {</span>
+<span class="nc" id="L180">						IU_USUARIO frame2 = new IU_USUARIO();</span>
+<span class="nc" id="L181">						frame2.setVisible(true);</span>
 						// frame2.jLabelNusario.setText(jTextFieldUser.getText());
-<span class="nc" id="L179">						frmLogIn.dispose();</span>
+<span class="nc" id="L183">						frmLogIn.dispose();</span>
 					}
 
-<span class="nc" id="L182">				} else {</span>
+<span class="nc" id="L186">				} else {</span>
 
-<span class="nc" id="L184">					lblNombre.setText(&quot;Usuario o contrase�a incorrecta&quot;);</span>
-<span class="nc" id="L185">					txtNombre.setText(&quot;&quot;);</span>
-<span class="nc" id="L186">					pswPass.setText(&quot;&quot;);</span>
+<span class="nc" id="L188">					lblNombre.setText(&quot;Usuario o password incorrecto&quot;);</span>
+<span class="nc" id="L189">					txtNombre.setText(&quot;&quot;);</span>
+<span class="nc" id="L190">					pswPass.setText(&quot;&quot;);</span>
 
 				}
-<span class="nc" id="L189">			} catch (Exception e) {</span>
-<span class="nc" id="L190">				e.printStackTrace();</span>
-<span class="nc" id="L191">			} // fin catch</span>
+<span class="nc" id="L193">			} catch (Exception e) {</span>
+<span class="nc" id="L194">				e.printStackTrace();</span>
+<span class="nc" id="L195">			} // fin catch</span>
 
-<span class="nc" id="L193">		}</span>
+<span class="nc" id="L197">		}</span>
 	}
 
-<span class="nc" id="L196">	private class BtnNuevoUsuarioActionListener implements ActionListener {</span>
+<span class="nc" id="L200">	private class BtnNuevoUsuarioActionListener implements ActionListener {</span>
 		public void actionPerformed(ActionEvent e) {
 
 			try {
-<span class="nc" id="L200">				IU_CREARUSUARIO frame = new IU_CREARUSUARIO();</span>
-<span class="nc" id="L201">				frame.setVisible(true);</span>
-<span class="nc" id="L202">				frmLogIn.dispose();</span>
-<span class="nc" id="L203">			} catch (Exception e1) {</span>
-<span class="nc" id="L204">				e1.printStackTrace();</span>
-<span class="nc" id="L205">			} // fin catch</span>
+<span class="nc" id="L204">				IU_CREARUSUARIO frame = new IU_CREARUSUARIO();</span>
+<span class="nc" id="L205">				frame.setVisible(true);</span>
+<span class="nc" id="L206">				frmLogIn.dispose();</span>
+<span class="nc" id="L207">			} catch (Exception e1) {</span>
+<span class="nc" id="L208">				e1.printStackTrace();</span>
+<span class="nc" id="L209">			} // fin catch</span>
 
-<span class="nc" id="L207">		}</span>
+<span class="nc" id="L211">		}</span>
+	}
+<span class="nc" id="L213">	private class TxtNombreActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L215">			pswPass.setEnabled(true);</span>
+<span class="nc" id="L216">		}</span>
+	}
+<span class="nc" id="L218">	private class PswPassActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L220">			btnInicoSesion.setEnabled(true);</span>
+<span class="nc" id="L221">		}</span>
 	}
 
 }

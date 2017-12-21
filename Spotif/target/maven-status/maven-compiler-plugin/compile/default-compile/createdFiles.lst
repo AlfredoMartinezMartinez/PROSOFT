@@ -8,6 +8,7 @@ Presentacion\IU_USUARIO$1.class
 Dominio\GestorReproductorMusica.class
 Dominio\Musica.class
 Presentacion\IU_ADMINISTRADOR$1.class
+Presentacion\IU_LOGIN$TxtNombreActionListener.class
 Persistencia\AgenteUsuario.class
 Presentacion\IU_LOGIN$BtnInicoSesionActionListener.class
 Presentacion\IU_ADMINISTRADOR.class
@@ -29,4 +30,5 @@ Dominio\GestorBusqueda.class
 Presentacion\IU_USUARIO.class
 Presentacion\IU_CREARUSUARIO$4.class
 Presentacion\IU_ADMINISTRADOR$2.class
+Presentacion\IU_LOGIN$PswPassActionListener.class
 Dominio\Gestor_pasarela.class

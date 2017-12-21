@@ -61,21 +61,21 @@ public class Usuario {
 	 * @throws Exception
 	 *             Control de error
 	 */
-	public static Usuario read(String nombre_usuario, String password) throws Exception {		
-<span class="nc" id="L65">		Usuario u = null;</span>
-<span class="nc" id="L66">		Vector&lt;Object&gt; aux = null;</span>
-<span class="nc" id="L67">		String SQL_Consulta = &quot;SELECT nombre, apellidos, login, password, correo, tipo FROM usuario WHERE login = '&quot;</span>
+	public static Usuario read(String nombre_usuario, String password) throws Exception {
+<span class="fc" id="L65">		Usuario u = null;</span>
+<span class="fc" id="L66">		Vector&lt;Object&gt; aux = null;</span>
+<span class="fc" id="L67">		String SQL_Consulta = &quot;SELECT nombre, apellidos, login, password, correo, tipo FROM usuario WHERE login = '&quot;</span>
 				+ nombre_usuario + &quot;' COLLATE utf8_bin AND password = '&quot; + password + &quot;' COLLATE utf8_bin&quot;;
 
-<span class="nc" id="L70">		AgenteUsuario a = AgenteUsuario.getAgente();</span>
-<span class="nc" id="L71">		Vector&lt;Object&gt; res = a.select(SQL_Consulta);</span>
+<span class="fc" id="L70">		AgenteUsuario a = AgenteUsuario.getAgente();</span>
+<span class="fc" id="L71">		Vector&lt;Object&gt; res = a.select(SQL_Consulta);</span>
 
-<span class="nc bnc" id="L73" title="All 2 branches missed.">		if (res.size() == 1) {</span>
-<span class="nc" id="L74">			aux = (Vector&lt;Object&gt;) res.elementAt(0);</span>
-<span class="nc" id="L75">			u = new Usuario((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),</span>
-<span class="nc" id="L76">					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));</span>
+<span class="fc bfc" id="L73" title="All 2 branches covered.">		if (res.size() == 1) {</span>
+<span class="fc" id="L74">			aux = (Vector&lt;Object&gt;) res.elementAt(0);</span>
+<span class="fc" id="L75">			u = new Usuario((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),</span>
+<span class="fc" id="L76">					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));</span>
 		}
-<span class="nc" id="L78">		return u;</span>
+<span class="fc" id="L78">		return u;</span>
 	}
 
 	/**
@@ -100,126 +100,117 @@ public class Usuario {
 	 */
 	public static int insert(String nombre, String apellidos, String login, String pass, String correo, String rol)
 			throws Exception {
-<span class="nc" id="L103">		int PersonalCorrecto = 0;</span>
-<span class="nc" id="L104">		AgenteUsuario agent = AgenteUsuario.getAgente();</span>
-<span class="nc" id="L105">		agent.insert(&quot;INSERT INTO usuario VALUES('&quot; + nombre + &quot;','&quot; + apellidos + &quot;','&quot; + login + &quot;','&quot; + pass + &quot;','&quot;</span>
-				+ correo + &quot;','&quot; + rol + &quot;');&quot;);
-<span class="nc bnc" id="L107" title="All 2 branches missed.">		if (GestorUsuario.login(nombre, pass)) {</span>
-<span class="nc" id="L108">			PersonalCorrecto = 1;</span>
+<span class="fc" id="L103">		int PersonalCorrecto = 0;</span>
+<span class="fc bfc" id="L104" title="All 10 branches covered.">		if (!nombre.equals(&quot;&quot;) &amp;&amp; !apellidos.equals(&quot;&quot;) &amp;&amp; !login.equals(&quot;&quot;) &amp;&amp; !pass.equals(&quot;&quot;) &amp;&amp; !correo.equals(&quot;&quot;)</span>
+<span class="fc bfc" id="L105" title="All 2 branches covered.">				&amp;&amp; !rol.equals(&quot;&quot;)) {</span>
+<span class="fc" id="L106">			AgenteUsuario agent = AgenteUsuario.getAgente();</span>
+<span class="fc" id="L107">			int num = agent.insert(&quot;INSERT INTO usuario VALUES('&quot; + nombre + &quot;','&quot; + apellidos + &quot;','&quot; + login + &quot;','&quot;</span>
+					+ pass + &quot;','&quot; + correo + &quot;','&quot; + rol + &quot;');&quot;);
+<span class="fc bfc" id="L109" title="All 2 branches covered.">			if (num != PersonalCorrecto) {</span>
+<span class="pc bpc" id="L110" title="1 of 2 branches missed.">				if (GestorUsuario.login(login, pass)) {</span>
+<span class="fc" id="L111">					PersonalCorrecto = 1;</span>
+				}
+			}
 		}
-<span class="nc" id="L110">		return PersonalCorrecto;</span>
+<span class="fc" id="L115">		return PersonalCorrecto;</span>
 
-		/*
-		 * Debe implementarse la l�gica para insertar el contenido de un objeto
-		 * personal en la base de datos Los objetos de la capa de dominio se comunican
-		 * con el agente para enviarle sus peticiones AYUDA1: la consulta para realizar
-		 * la inserci�n es la siguiente
-		 * &quot;INSERT INTO personal VALUES('&quot;+this.mLogin+&quot;','&quot;+this.mPassword+&quot;');&quot;
-		 * AYUDA2: Del mismo modo que para consultar la informaci�n, el agente provee
-		 * de un m�todo &quot;select&quot;, para hacer una inserci�n el agente provee de un
-		 * m�todo &quot;insert&quot;
-		 */
 	}
 
 	/**
-	 * Metodo que devuelve el tipo de usuario
+	 * Metodos Getters/Setters
 	 * 
-	 * @return rol Devuelve el rol del usuario
 	 */
 	public String getRol() {
-<span class="nc" id="L130">		return rol;</span>
+<span class="nc" id="L124">		return rol;</span>
 	}
 
-	/**
-	 * Metodo que permite establecer el tipo de usuario
-	 * 
-	 * @param rol
-	 *            Cambia rol del usuario
-	 */
 	public void setRol(String rol) {
-<span class="nc" id="L140">		this.rol = rol;</span>
-<span class="nc" id="L141">	}</span>
+<span class="nc" id="L128">		this.rol = rol;</span>
+<span class="nc" id="L129">	}</span>
 
 	public String getNombre() {
-<span class="nc" id="L144">		return nombre;</span>
+<span class="nc" id="L132">		return nombre;</span>
 	}
 
 	public void setNombre(String nombre) {
-<span class="nc" id="L148">		this.nombre = nombre;</span>
-<span class="nc" id="L149">	}</span>
+<span class="nc" id="L136">		this.nombre = nombre;</span>
+<span class="nc" id="L137">	}</span>
 
 	public String getApellidos() {
-<span class="nc" id="L152">		return apellidos;</span>
+<span class="nc" id="L140">		return apellidos;</span>
 	}
 
 	public void setApellidos(String apellidos) {
-<span class="nc" id="L156">		this.apellidos = apellidos;</span>
-<span class="nc" id="L157">	}</span>
+<span class="nc" id="L144">		this.apellidos = apellidos;</span>
+<span class="nc" id="L145">	}</span>
 
 	public String getNombre_usuario() {
-<span class="nc" id="L160">		return nombre_usuario;</span>
+<span class="nc" id="L148">		return nombre_usuario;</span>
 	}
 
 	public void setNombre_usuario(String nombre_usuario) {
-<span class="nc" id="L164">		this.nombre_usuario = nombre_usuario;</span>
-<span class="nc" id="L165">	}</span>
+<span class="nc" id="L152">		this.nombre_usuario = nombre_usuario;</span>
+<span class="nc" id="L153">	}</span>
 
 	public String getPassword() {
-<span class="nc" id="L168">		return password;</span>
+<span class="nc" id="L156">		return password;</span>
 	}
 
 	public void setPassword(String password) {
-<span class="nc" id="L172">		this.password = password;</span>
-<span class="nc" id="L173">	}</span>
+<span class="nc" id="L160">		this.password = password;</span>
+<span class="nc" id="L161">	}</span>
 
 	public String getCorreo() {
-<span class="nc" id="L176">		return correo;</span>
+<span class="nc" id="L164">		return correo;</span>
 	}
 
 	public void setCorreo(String correo) {
-<span class="nc" id="L180">		this.correo = correo;</span>
-<span class="nc" id="L181">	}</span>
+<span class="nc" id="L168">		this.correo = correo;</span>
+<span class="nc" id="L169">	}</span>
 
+	/**
+	 * metodo equals para comparar dos objetos usuario
+	 */
 	@Override
 	public boolean equals(Object obj) {
-<span class="pc bpc" id="L185" title="1 of 2 branches missed.">		if (this == obj)</span>
-<span class="nc" id="L186">			return true;</span>
-<span class="pc bpc" id="L187" title="1 of 2 branches missed.">		if (obj == null)</span>
-<span class="nc" id="L188">			return false;</span>
-<span class="pc bpc" id="L189" title="1 of 2 branches missed.">		if (getClass() != obj.getClass())</span>
-<span class="nc" id="L190">			return false;</span>
-<span class="fc" id="L191">		Usuario other = (Usuario) obj;</span>
-<span class="pc bpc" id="L192" title="1 of 2 branches missed.">		if (apellidos == null) {</span>
-<span class="nc bnc" id="L193" title="All 2 branches missed.">			if (other.apellidos != null)</span>
-<span class="nc" id="L194">				return false;</span>
-<span class="pc bpc" id="L195" title="1 of 2 branches missed.">		} else if (!apellidos.equals(other.apellidos))</span>
-<span class="nc" id="L196">			return false;</span>
-<span class="pc bpc" id="L197" title="1 of 2 branches missed.">		if (correo == null) {</span>
-<span class="nc bnc" id="L198" title="All 2 branches missed.">			if (other.correo != null)</span>
-<span class="nc" id="L199">				return false;</span>
-<span class="pc bpc" id="L200" title="1 of 2 branches missed.">		} else if (!correo.equals(other.correo))</span>
-<span class="nc" id="L201">			return false;</span>
-<span class="pc bpc" id="L202" title="1 of 2 branches missed.">		if (nombre == null) {</span>
-<span class="nc bnc" id="L203" title="All 2 branches missed.">			if (other.nombre != null)</span>
-<span class="nc" id="L204">				return false;</span>
-<span class="pc bpc" id="L205" title="1 of 2 branches missed.">		} else if (!nombre.equals(other.nombre))</span>
-<span class="nc" id="L206">			return false;</span>
-<span class="pc bpc" id="L207" title="1 of 2 branches missed.">		if (nombre_usuario == null) {</span>
-<span class="nc bnc" id="L208" title="All 2 branches missed.">			if (other.nombre_usuario != null)</span>
-<span class="nc" id="L209">				return false;</span>
-<span class="pc bpc" id="L210" title="1 of 2 branches missed.">		} else if (!nombre_usuario.equals(other.nombre_usuario))</span>
-<span class="nc" id="L211">			return false;</span>
-<span class="pc bpc" id="L212" title="1 of 2 branches missed.">		if (password == null) {</span>
-<span class="nc bnc" id="L213" title="All 2 branches missed.">			if (other.password != null)</span>
-<span class="nc" id="L214">				return false;</span>
-<span class="pc bpc" id="L215" title="1 of 2 branches missed.">		} else if (!password.equals(other.password))</span>
-<span class="nc" id="L216">			return false;</span>
-<span class="pc bpc" id="L217" title="1 of 2 branches missed.">		if (rol == null) {</span>
-<span class="nc bnc" id="L218" title="All 2 branches missed.">			if (other.rol != null)</span>
-<span class="nc" id="L219">				return false;</span>
-<span class="pc bpc" id="L220" title="1 of 2 branches missed.">		} else if (!rol.equals(other.rol))</span>
-<span class="nc" id="L221">			return false;</span>
-<span class="fc" id="L222">		return true;</span>
+<span class="pc bpc" id="L176" title="1 of 2 branches missed.">		if (this == obj)</span>
+<span class="nc" id="L177">			return true;</span>
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">		if (obj == null)</span>
+<span class="nc" id="L179">			return false;</span>
+<span class="pc bpc" id="L180" title="1 of 2 branches missed.">		if (getClass() != obj.getClass())</span>
+<span class="nc" id="L181">			return false;</span>
+<span class="fc" id="L182">		Usuario other = (Usuario) obj;</span>
+<span class="pc bpc" id="L183" title="1 of 2 branches missed.">		if (apellidos == null) {</span>
+<span class="nc bnc" id="L184" title="All 2 branches missed.">			if (other.apellidos != null)</span>
+<span class="nc" id="L185">				return false;</span>
+<span class="pc bpc" id="L186" title="1 of 2 branches missed.">		} else if (!apellidos.equals(other.apellidos))</span>
+<span class="nc" id="L187">			return false;</span>
+<span class="pc bpc" id="L188" title="1 of 2 branches missed.">		if (correo == null) {</span>
+<span class="nc bnc" id="L189" title="All 2 branches missed.">			if (other.correo != null)</span>
+<span class="nc" id="L190">				return false;</span>
+<span class="pc bpc" id="L191" title="1 of 2 branches missed.">		} else if (!correo.equals(other.correo))</span>
+<span class="nc" id="L192">			return false;</span>
+<span class="pc bpc" id="L193" title="1 of 2 branches missed.">		if (nombre == null) {</span>
+<span class="nc bnc" id="L194" title="All 2 branches missed.">			if (other.nombre != null)</span>
+<span class="nc" id="L195">				return false;</span>
+<span class="pc bpc" id="L196" title="1 of 2 branches missed.">		} else if (!nombre.equals(other.nombre))</span>
+<span class="nc" id="L197">			return false;</span>
+<span class="pc bpc" id="L198" title="1 of 2 branches missed.">		if (nombre_usuario == null) {</span>
+<span class="nc bnc" id="L199" title="All 2 branches missed.">			if (other.nombre_usuario != null)</span>
+<span class="nc" id="L200">				return false;</span>
+<span class="pc bpc" id="L201" title="1 of 2 branches missed.">		} else if (!nombre_usuario.equals(other.nombre_usuario))</span>
+<span class="nc" id="L202">			return false;</span>
+<span class="pc bpc" id="L203" title="1 of 2 branches missed.">		if (password == null) {</span>
+<span class="nc bnc" id="L204" title="All 2 branches missed.">			if (other.password != null)</span>
+<span class="nc" id="L205">				return false;</span>
+<span class="pc bpc" id="L206" title="1 of 2 branches missed.">		} else if (!password.equals(other.password))</span>
+<span class="nc" id="L207">			return false;</span>
+<span class="pc bpc" id="L208" title="1 of 2 branches missed.">		if (rol == null) {</span>
+<span class="nc bnc" id="L209" title="All 2 branches missed.">			if (other.rol != null)</span>
+<span class="nc" id="L210">				return false;</span>
+<span class="pc bpc" id="L211" title="1 of 2 branches missed.">		} else if (!rol.equals(other.rol))</span>
+<span class="nc" id="L212">			return false;</span>
+<span class="fc" id="L213">		return true;</span>
 	}
 
 }
