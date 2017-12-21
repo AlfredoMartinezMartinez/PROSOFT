@@ -107,7 +107,7 @@ public class Usuario {
 		if (num != PersonalCorrecto) {
 			if (GestorUsuario.login(login, pass)) {
 				PersonalCorrecto = 1;
-			}
+			}			
 		}
 		return PersonalCorrecto;
 
