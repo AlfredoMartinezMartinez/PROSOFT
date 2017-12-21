@@ -101,13 +101,16 @@ public class Usuario {
 	public static int insert(String nombre, String apellidos, String login, String pass, String correo, String rol)
 			throws Exception {
 		int PersonalCorrecto = 0;
-		AgenteUsuario agent = AgenteUsuario.getAgente();
-		int num = agent.insert("INSERT INTO usuario VALUES('" + nombre + "','" + apellidos + "','" + login + "','"
-				+ pass + "','" + correo + "','" + rol + "');");
-		if (num != PersonalCorrecto) {
-			if (GestorUsuario.login(login, pass)) {
-				PersonalCorrecto = 1;
-			}			
+		if (!nombre.equals("") && !apellidos.equals("") && !login.equals("") && !pass.equals("") && !correo.equals("")
+				&& !rol.equals("")) {
+			AgenteUsuario agent = AgenteUsuario.getAgente();
+			int num = agent.insert("INSERT INTO usuario VALUES('" + nombre + "','" + apellidos + "','" + login + "','"
+					+ pass + "','" + correo + "','" + rol + "');");
+			if (num != PersonalCorrecto) {
+				if (GestorUsuario.login(login, pass)) {
+					PersonalCorrecto = 1;
+				}
+			}
 		}
 		return PersonalCorrecto;
 
