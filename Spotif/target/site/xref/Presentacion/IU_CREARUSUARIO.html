@@ -5,27 +5,27 @@
 <link type="text/css" rel="stylesheet" href="../stylesheet.css" />
 </head>
 <body>
-<div id="overview"><a href="../../apidocs/Presentacion/IU_CREARUSUARIO.html">View Javadoc</a></div><pre>
+<div id="overview"><a href="../../apidocs/presentacion/IU_CREARUSUARIO.html">View Javadoc</a></div><pre>
 <a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
 <a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * To change this license header, choose License Headers in Project Properties.</em>
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> * To change this template file, choose Tools | Templates</em>
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> * and open the template in the editor.</em>
 <a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> */</em>
-<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">package</strong> Presentacion;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <strong class="jxr_keyword">package</strong> presentacion;
 <a class="jxr_linenumber" name="L7" href="#L7">7</a>   
-<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> Dominio.GestorUsuario;
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <strong class="jxr_keyword">import</strong> dominio.GestorUsuario;
 <a class="jxr_linenumber" name="L9" href="#L9">9</a>   
 <a class="jxr_linenumber" name="L10" href="#L10">10</a>  
 <a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> *</em>
 <a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_javadoccomment"> * @author Alfredo</em>
 <a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../Presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a> <strong class="jxr_keyword">extends</strong> javax.swing.JFrame {
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a> <strong class="jxr_keyword">extends</strong> javax.swing.JFrame {
 <a class="jxr_linenumber" name="L16" href="#L16">16</a>  
 <a class="jxr_linenumber" name="L17" href="#L17">17</a>      <em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment">     * Creates new form IU_Administrativo</em>
 <a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment">     */</em>
-<a class="jxr_linenumber" name="L20" href="#L20">20</a>      <strong class="jxr_keyword">public</strong> <a href="../Presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>() {
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>      <strong class="jxr_keyword">public</strong> <a href="../presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>() {
 <a class="jxr_linenumber" name="L21" href="#L21">21</a>          initComponents();
 <a class="jxr_linenumber" name="L22" href="#L22">22</a>          <strong class="jxr_keyword">this</strong>.setLocationRelativeTo(<strong class="jxr_keyword">null</strong>);
 <a class="jxr_linenumber" name="L23" href="#L23">23</a>      }
@@ -161,7 +161,7 @@
 <a class="jxr_linenumber" name="L153" href="#L153">153</a> 		<strong class="jxr_keyword">if</strong> (autenticar1){
 <a class="jxr_linenumber" name="L154" href="#L154">154</a> 		                      
 <a class="jxr_linenumber" name="L155" href="#L155">155</a>                     registrado.setText(<span class="jxr_string">"Usuario registrado"</span>);
-<a class="jxr_linenumber" name="L156" href="#L156">156</a>                     <a href="../Presentacion/IU_LOGIN.html">IU_LOGIN</a> framelog=<strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_LOGIN.html">IU_LOGIN</a>();
+<a class="jxr_linenumber" name="L156" href="#L156">156</a>                     <a href="../presentacion/IU_LOGIN.html">IU_LOGIN</a> framelog=<strong class="jxr_keyword">new</strong> <a href="../presentacion/IU_LOGIN.html">IU_LOGIN</a>();
 <a class="jxr_linenumber" name="L157" href="#L157">157</a>                     framelog.getFrmVentanaLogIn().setVisible(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L158" href="#L158">158</a>                     <strong class="jxr_keyword">this</strong>.setVisible(false);
 <a class="jxr_linenumber" name="L159" href="#L159">159</a>                     
@@ -223,7 +223,7 @@
 <a class="jxr_linenumber" name="L215" href="#L215">215</a>         <em class="jxr_comment">/* Create and display the form */</em>
 <a class="jxr_linenumber" name="L216" href="#L216">216</a>         java.awt.EventQueue.invokeLater(<strong class="jxr_keyword">new</strong> Runnable() {
 <a class="jxr_linenumber" name="L217" href="#L217">217</a>             <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">void</strong> run() {
-<a class="jxr_linenumber" name="L218" href="#L218">218</a>                 <strong class="jxr_keyword">new</strong> <a href="../Presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>().setVisible(<strong class="jxr_keyword">true</strong>);
+<a class="jxr_linenumber" name="L218" href="#L218">218</a>                 <strong class="jxr_keyword">new</strong> <a href="../presentacion/IU_CREARUSUARIO.html">IU_CREARUSUARIO</a>().setVisible(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L219" href="#L219">219</a>             }
 <a class="jxr_linenumber" name="L220" href="#L220">220</a>         });
 <a class="jxr_linenumber" name="L221" href="#L221">221</a>     }

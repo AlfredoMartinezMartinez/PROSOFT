@@ -5,12 +5,12 @@
 <link type="text/css" rel="stylesheet" href="../stylesheet.css" />
 </head>
 <body>
-<div id="overview"><a href="../../apidocs/Dominio/Usuario.html">View Javadoc</a></div><pre>
-<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> Dominio;
+<div id="overview"><a href="../../apidocs/dominio/Usuario.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> dominio;
 <a class="jxr_linenumber" name="L2" href="#L2">2</a>   
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> java.util.Vector;
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   
-<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> Persistencia.*;
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> persistencia.*;
 <a class="jxr_linenumber" name="L6" href="#L6">6</a>   
 <a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment">/**</em>
 <a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> * Clase que permite crear objetos usuario.</em>
@@ -18,7 +18,7 @@
 <a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> * @author PROSOFT</em>
 <a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> *</em>
 <a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> */</em>
-<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../Dominio/Usuario.html">Usuario</a> {
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../dominio/Usuario.html">Usuario</a> {
 <a class="jxr_linenumber" name="L14" href="#L14">14</a>  	<strong class="jxr_keyword">private</strong> String nombre;
 <a class="jxr_linenumber" name="L15" href="#L15">15</a>  	<strong class="jxr_keyword">private</strong> String apellidos;
 <a class="jxr_linenumber" name="L16" href="#L16">16</a>  	<strong class="jxr_keyword">private</strong> String nombre_usuario;
@@ -26,7 +26,7 @@
 <a class="jxr_linenumber" name="L18" href="#L18">18</a>  	<strong class="jxr_keyword">private</strong> String correo;
 <a class="jxr_linenumber" name="L19" href="#L19">19</a>  	<strong class="jxr_keyword">private</strong> String rol;
 <a class="jxr_linenumber" name="L20" href="#L20">20</a>  
-<a class="jxr_linenumber" name="L21" href="#L21">21</a>  	<strong class="jxr_keyword">public</strong> <a href="../Dominio/Usuario.html">Usuario</a>() {
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  	<strong class="jxr_keyword">public</strong> <a href="../dominio/Usuario.html">Usuario</a>() {
 <a class="jxr_linenumber" name="L22" href="#L22">22</a>  		<strong class="jxr_keyword">this</strong>.nombre_usuario = <strong class="jxr_keyword">null</strong>;
 <a class="jxr_linenumber" name="L23" href="#L23">23</a>  		<strong class="jxr_keyword">this</strong>.password = <strong class="jxr_keyword">null</strong>;
 <a class="jxr_linenumber" name="L24" href="#L24">24</a>  		<strong class="jxr_keyword">this</strong>.rol = <strong class="jxr_keyword">null</strong>;
@@ -48,7 +48,7 @@
 <a class="jxr_linenumber" name="L40" href="#L40">40</a>  <em class="jxr_javadoccomment">	 * @param rol</em>
 <a class="jxr_linenumber" name="L41" href="#L41">41</a>  <em class="jxr_javadoccomment">	 *            Atributo rol</em>
 <a class="jxr_linenumber" name="L42" href="#L42">42</a>  <em class="jxr_javadoccomment">	 */</em>
-<a class="jxr_linenumber" name="L43" href="#L43">43</a>  	<strong class="jxr_keyword">public</strong> <a href="../Dominio/Usuario.html">Usuario</a>(String nombre, String apellidos, String nombre_usuario, String password, String correo, String rol) {
+<a class="jxr_linenumber" name="L43" href="#L43">43</a>  	<strong class="jxr_keyword">public</strong> <a href="../dominio/Usuario.html">Usuario</a>(String nombre, String apellidos, String nombre_usuario, String password, String correo, String rol) {
 <a class="jxr_linenumber" name="L44" href="#L44">44</a>  		<strong class="jxr_keyword">this</strong>.nombre = nombre;
 <a class="jxr_linenumber" name="L45" href="#L45">45</a>  		<strong class="jxr_keyword">this</strong>.apellidos = apellidos;
 <a class="jxr_linenumber" name="L46" href="#L46">46</a>  		<strong class="jxr_keyword">this</strong>.nombre_usuario = nombre_usuario;
@@ -69,7 +69,7 @@
 <a class="jxr_linenumber" name="L61" href="#L61">61</a>  <em class="jxr_javadoccomment">	 * @throws Exception</em>
 <a class="jxr_linenumber" name="L62" href="#L62">62</a>  <em class="jxr_javadoccomment">	 *             Control de error</em>
 <a class="jxr_linenumber" name="L63" href="#L63">63</a>  <em class="jxr_javadoccomment">	 */</em>
-<a class="jxr_linenumber" name="L64" href="#L64">64</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../Dominio/Usuario.html">Usuario</a> read(String nombre_usuario, String password) <strong class="jxr_keyword">throws</strong> Exception {
+<a class="jxr_linenumber" name="L64" href="#L64">64</a>  	<strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <a href="../dominio/Usuario.html">Usuario</a> read(String nombre_usuario, String password) <strong class="jxr_keyword">throws</strong> Exception {
 <a class="jxr_linenumber" name="L65" href="#L65">65</a>  		Usuario u = <strong class="jxr_keyword">null</strong>;
 <a class="jxr_linenumber" name="L66" href="#L66">66</a>  		Vector&lt;Object&gt; aux = <strong class="jxr_keyword">null</strong>;
 <a class="jxr_linenumber" name="L67" href="#L67">67</a>  		String SQL_Consulta = <span class="jxr_string">"SELECT nombre, apellidos, login, password, correo, tipo FROM usuario WHERE login = '"</span>
@@ -80,7 +80,7 @@
 <a class="jxr_linenumber" name="L72" href="#L72">72</a>  
 <a class="jxr_linenumber" name="L73" href="#L73">73</a>  		<strong class="jxr_keyword">if</strong> (res.size() == 1) {
 <a class="jxr_linenumber" name="L74" href="#L74">74</a>  			aux = (Vector&lt;Object&gt;) res.elementAt(0);
-<a class="jxr_linenumber" name="L75" href="#L75">75</a>  			u = <strong class="jxr_keyword">new</strong> <a href="../Dominio/Usuario.html">Usuario</a>((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),
+<a class="jxr_linenumber" name="L75" href="#L75">75</a>  			u = <strong class="jxr_keyword">new</strong> <a href="../dominio/Usuario.html">Usuario</a>((String) aux.elementAt(0), (String) aux.elementAt(1), (String) aux.elementAt(2),
 <a class="jxr_linenumber" name="L76" href="#L76">76</a>  					(String) aux.elementAt(3), (String) aux.elementAt(4), (String) aux.elementAt(5));
 <a class="jxr_linenumber" name="L77" href="#L77">77</a>  		}
 <a class="jxr_linenumber" name="L78" href="#L78">78</a>  		<strong class="jxr_keyword">return</strong> u;

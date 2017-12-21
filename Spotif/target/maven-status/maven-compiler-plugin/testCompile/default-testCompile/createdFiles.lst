@@ -1,4 +1,7 @@
-Dominio\TestUsuario.class
-Dominio\TestUsuarioInsertNull.class
-Persistencia\TestAgenteUsuario.class
-Dominio\TestUsuarioInsertVacio.class
+dominio\TestaGestorUsuario.class
+dominio\TestBatGestUserInsVacio.class
+dominio\TestBatteryUsuarioInsertNull.class
+persistencia\TestAgenteUsuario.class
+dominio\TestaUsuario.class
+dominio\TestBatGestUserInsNull.class
+dominio\TestBatteryUsuarioInsertVacio.class
