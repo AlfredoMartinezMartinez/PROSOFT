@@ -25,7 +25,8 @@ public class Usuario {
 	}
 
 	/**
-	 * Atributos de Usuario que serán almacenados en la Base de Datos
+	 * 
+	 * Atributos de Usuario que seran almacenados en la Base de Datos
 	 * 
 	 * @param nombre
 	 *            Atributo Nombre

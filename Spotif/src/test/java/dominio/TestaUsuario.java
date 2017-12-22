@@ -97,6 +97,7 @@ public class TestaUsuario {
 
 	/**
 	 * Test que da verdadero si se intenta insertar un cliente que existe
+	 * Error de integridad referencial
 	 * 
 	 * @throws Exception
 	 *             Control de excepciones

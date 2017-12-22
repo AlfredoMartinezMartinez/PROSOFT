@@ -36,7 +36,8 @@ public class TestaGestorUsuario {
 
 	/**
 	 * Test que pasa si el resultado es false si se intenta insertar un cliente que
-	 * existe
+	 * existe. Error de integridad referencial
+	 * 
 	 * 
 	 * @throws Exception
 	 *             Control de excepciones
@@ -93,7 +94,7 @@ public class TestaGestorUsuario {
 	@Test
 	public void testLogin3() throws Exception {
 		boolean expected = false;
-		boolean obtenido = GestorUsuario.login("1234", "error");
+		boolean obtenido = GestorUsuario.login("error", "5678");
 		assertEquals(expected, obtenido);
 	}
 	

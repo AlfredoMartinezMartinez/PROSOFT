@@ -34,32 +34,32 @@ public class TestBatteryUsuarioInsertNull {
 		this.correo = correo;
 		this.rol = rol;
 	}
-	
+
 	/**
 	 * 
-	 * Bateria de pruebas con distintos usuarios que incluyen null en algun parametro
+	 * Bateria de pruebas con distintos usuarios que incluyen null en algun
+	 * parametro
 	 * 
 	 * @return collecion de usuarios
 	 * 
 	 */
 	@Parameters
 	public static Collection<Object[]> datos() {
-		return Arrays.asList(new Object[][] { 
-				{ null, "testApe", "testLog", "testPass", "testCorreo", "testRol" },
+		return Arrays.asList(new Object[][] { { null, "testApe", "testLog", "testPass", "testCorreo", "testRol" },
 				{ "testNombre", null, "testLog", "testPass", "testCorreo", "testRol" },
 				{ "testNombre", "testApe", null, "testPass", "testCorreo", "testRol" },
 				{ "testNombre", "testApe", "testLog", null, "testCorreo", "testRol" },
 				{ "testNombre", "testApe", "testLog", "testPass", null, "testRol" },
 				{ "testNombre", "testApe", "testLog", "testPass", "testCorreo", null }, });
 	}
-	
+
 	/**
 	 * 
 	 * pasa el test si da como resultado una excepcion
 	 * 
 	 * @throws Exception
 	 *             Control de errores
-	 *             
+	 * 
 	 */
 	@Test(expected = NullPointerException.class)
 	public void testInsert() throws Exception {

@@ -42,7 +42,7 @@ public class TestAgenteUsuario {
 
 	/**
 	 * Test que devuelve verdadero si hay un error en la sintaxis de la sentencia
-	 * SQL. Error recogido en el código de la clase AgenteUsuario con try-catch
+	 * SQL. Error recogido en el cï¿½digo de la clase AgenteUsuario con try-catch
 	 * 
 	 * @throws Exception
 	 *             control de errores
@@ -57,8 +57,8 @@ public class TestAgenteUsuario {
 	}
 
 	/**
-	 * Test que devuelve verdadero si el usuario ya está en la BBDD. Error recogido
-	 * en el código de la clase AgenteUsuario con try-catch
+	 * Test que devuelve verdadero si el usuario ya estï¿½ en la BBDD. Error recogido
+	 * en el codigo de la clase AgenteUsuario con try-catch
 	 * 
 	 * @throws Exception
 	 *             control de errores
@@ -91,7 +91,7 @@ public class TestAgenteUsuario {
 
 	/**
 	 * Test que devuelve verdadero si hay un error en la sintaxis de la sentencia
-	 * SQL. Error recogido en el código de la clase AgenteUsuario con try-catch
+	 * SQL. Error recogido en el cï¿½digo de la clase AgenteUsuario con try-catch
 	 * 
 	 * @throws Exception
 	 *             control de errores
@@ -162,7 +162,7 @@ public class TestAgenteUsuario {
 
 	/**
 	 * Test que devuelve verdadero si devuelve los mismos datos indicados en el
-	 * Usuario esperado. Gracias por enseñarnos la creacion del metodo equals en 2
+	 * Usuario esperado. Gracias por enseï¿½arnos la creacion del metodo equals en 2
 	 * segundos.Muy util
 	 * 
 	 * @throws Exception
@@ -225,26 +225,6 @@ public class TestAgenteUsuario {
 	}
 
 	/**
-	 * Test que devuelve verdadero si no hay datos con el statement enviado
-	 * devolviendo 0 como tamaño del vector
-	 * 
-	 * @throws Exception
-	 *             Control de errores
-	 */
-	@Test
-	public void testSelect5() throws Exception {
-		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
-		String SQL_select_1 = "SELECT * FROM usuario WHERE login='testLog2'";
-		Usuario expected = new Usuario("testNom", "testApellido", "testLog", "testPass", "testCorreo", "testRol");
-		Usuario u = null;
-		Vector<Object> aux = null;
-		Vector<Object> res = mInstancia.select(SQL_select_1);
-
-		assertTrue(res.size() == 0);
-
-	}
-
-	/**
 	 * Test que devuelve verdadero si el usuario se ha borrado de la BBDD
 	 * 
 	 * @throws Exception
@@ -273,7 +253,7 @@ public class TestAgenteUsuario {
 	}
 
 	/**
-	 * Test que devuelve verdadero si hay error de sintaxis SQL
+	 * Test que devuelve verdadero si hay error de sintaxis SQL ""
 	 * 
 	 * @throws Exception
 	 *             Control de errores
@@ -281,7 +261,7 @@ public class TestAgenteUsuario {
 	@Test(expected = SQLException.class)
 	public void testZDelete3() throws Exception {
 		AgenteUsuario mInstancia = AgenteUsuario.getAgente();
-		String SQL_delete_3 = "Adios Test";
+		String SQL_delete_3 = "";
 		mInstancia.delete(SQL_delete_3);
 
 	}
