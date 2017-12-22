@@ -30,6 +30,14 @@ public class TestBatGestUserInsNull {
 		this.rol = rol;
 	}
 
+	/**
+	 * 
+	 * Bateria de pruebas con distintos usuarios que incluyen null en algun
+	 * parametro
+	 * 
+	 * @return collecion de usuarios
+	 * 
+	 */
 	@Parameters
 	public static Collection<Object[]> datos() {
 		return Arrays.asList(new Object[][] { { null, "testApe", "testLog", "testPass", "testCorreo", "testRol" },
@@ -40,11 +48,18 @@ public class TestBatGestUserInsNull {
 				{ "testNombre", "testApe", "testLog", "testPass", "testCorreo", null }, });
 	}
 
+	/**
+	 * 
+	 * pasa el test si da como resultado una excepcion
+	 * 
+	 * @throws Exception
+	 *             Control de errores
+	 * 
+	 */
 	@Test(expected = NullPointerException.class)
 	public void testInsert() throws Exception {
 		GestorUsuario.crearUsuario(nombre, apellidos, login, pass, correo, rol);
 
 	}
-
 
 }

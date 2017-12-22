@@ -112,7 +112,7 @@ public class IU_ADMINISTRADOR extends javax.swing.JFrame {
         
         try{
 <span class="nc" id="L114">                jButtonPlay.setEnabled(true);</span>
-<span class="nc" id="L115">                gestor_reproductor.Pausa();</span>
+<span class="nc" id="L115">                gestor_reproductor.pausa();</span>
 <span class="nc" id="L116">                jButtonPausa.setEnabled(false);</span>
 		//btnPausa.setEnabled(b);
                                
@@ -126,10 +126,10 @@ public class IU_ADMINISTRADOR extends javax.swing.JFrame {
         // TODO add your handling code here:
         	try {
 <span class="nc bnc" id="L128" title="All 2 branches missed.">                    if(jButtonPausa.isEnabled()==false){</span>
-<span class="nc" id="L129">			gestor_reproductor.Continuar();</span>
+<span class="nc" id="L129">			gestor_reproductor.continuar();</span>
 <span class="nc" id="L130">			jButtonPausa.setEnabled(true);}</span>
                     else{
-<span class="nc" id="L132">			gestor_reproductor.AbrirFichero();</span>
+<span class="nc" id="L132">			gestor_reproductor.abrirFichero();</span>
 <span class="nc" id="L133">			gestor_reproductor.reproducirMusica();</span>
 <span class="nc" id="L134">			jButtonPausa.setEnabled(true);</span>
 <span class="nc" id="L135">			jButtonPlay.setEnabled(false);}</span>
@@ -145,7 +145,7 @@ public class IU_ADMINISTRADOR extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
 				
-<span class="nc" id="L148">				gestor_reproductor.Stop();</span>
+<span class="nc" id="L148">				gestor_reproductor.stop();</span>
 <span class="nc" id="L149">				jButtonPausa.setEnabled(true);</span>
 <span class="nc" id="L150">				jButtonPlay.setEnabled(true);				</span>
 <span class="nc" id="L151">			} catch (Exception e) {</span>

@@ -97,29 +97,29 @@ public class Usuario {
 	 *         usuario
 	 * @throws Exception
 	 *             Control de errores
+	 *             
 	 */
 	public static int insert(String nombre, String apellidos, String login, String pass, String correo, String rol)
 			throws Exception {
-<span class="fc" id="L103">		int PersonalCorrecto = 0;</span>
-<span class="fc bfc" id="L104" title="All 10 branches covered.">		if (!nombre.equals(&quot;&quot;) &amp;&amp; !apellidos.equals(&quot;&quot;) &amp;&amp; !login.equals(&quot;&quot;) &amp;&amp; !pass.equals(&quot;&quot;) &amp;&amp; !correo.equals(&quot;&quot;)</span>
-<span class="fc bfc" id="L105" title="All 2 branches covered.">				&amp;&amp; !rol.equals(&quot;&quot;)) {</span>
-<span class="fc" id="L106">			AgenteUsuario agent = AgenteUsuario.getAgente();</span>
-<span class="fc" id="L107">			int num = agent.insert(&quot;INSERT INTO usuario VALUES('&quot; + nombre + &quot;','&quot; + apellidos + &quot;','&quot; + login + &quot;','&quot;</span>
+<span class="fc" id="L104">		int PersonalCorrecto = 0;</span>
+<span class="fc bfc" id="L105" title="All 10 branches covered.">		if (!nombre.equals(&quot;&quot;) &amp;&amp; !apellidos.equals(&quot;&quot;) &amp;&amp; !login.equals(&quot;&quot;) &amp;&amp; !pass.equals(&quot;&quot;) &amp;&amp; !correo.equals(&quot;&quot;)</span>
+<span class="fc bfc" id="L106" title="All 2 branches covered.">				&amp;&amp; !rol.equals(&quot;&quot;)) {</span>
+<span class="fc" id="L107">			AgenteUsuario agent = AgenteUsuario.getAgente();</span>
+<span class="fc" id="L108">			int num = agent.insert(&quot;INSERT INTO usuario VALUES('&quot; + nombre + &quot;','&quot; + apellidos + &quot;','&quot; + login + &quot;','&quot;</span>
 					+ pass + &quot;','&quot; + correo + &quot;','&quot; + rol + &quot;');&quot;);
-<span class="fc bfc" id="L109" title="All 2 branches covered.">			if (num != PersonalCorrecto) {</span>
-<span class="pc bpc" id="L110" title="1 of 2 branches missed.">				if (GestorUsuario.login(login, pass)) {</span>
-<span class="fc" id="L111">					PersonalCorrecto = 1;</span>
+<span class="fc bfc" id="L110" title="All 2 branches covered.">			if (num != PersonalCorrecto) {</span>
+<span class="pc bpc" id="L111" title="1 of 2 branches missed.">				if (GestorUsuario.login(login, pass)) {</span>
+<span class="fc" id="L112">					PersonalCorrecto = 1;</span>
 				}
 			}
 		}
-<span class="fc" id="L115">		return PersonalCorrecto;</span>
+<span class="fc" id="L116">		return PersonalCorrecto;</span>
 
 	}
 
-	/**
-	 * Metodos Getters/Setters
-	 * 
-	 */
+	
+	 //Metodos Getters/Setters	  
+	 
 	public String getRol() {
 <span class="fc" id="L124">		return rol;</span>
 	}

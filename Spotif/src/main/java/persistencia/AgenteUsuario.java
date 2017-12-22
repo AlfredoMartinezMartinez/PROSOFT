@@ -1,13 +1,10 @@
 package persistencia;
 
 import java.sql.*;
-import java.util.Iterator;
 import java.util.Vector;
-import java.util.LinkedList;
-
-import java.util.List;
 
 /**
+ * 
  * Clase que implementa los metodos necesarios para relacionar a los usuarios
  * con la BBDD
  * 
@@ -71,7 +68,7 @@ public class AgenteUsuario {
 	 * @throws Exception
 	 *             Control de Errores
 	 */
-	public int insert(String SQL) throws SQLException,Exception {
+	public int insert(String SQL) throws Exception {
 		conectar();
 		PreparedStatement stmt = mBD.prepareStatement(SQL);
 		int res = 0;

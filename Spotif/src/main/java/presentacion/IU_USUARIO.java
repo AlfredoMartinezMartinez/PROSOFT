@@ -107,7 +107,7 @@ public class IU_USUARIO extends javax.swing.JFrame {
         
         try{
                 jButtonPlay.setEnabled(true);
-                gestor_reproductor.Pausa();
+                gestor_reproductor.pausa();
                 jButtonPausa.setEnabled(false);
 		//btnPausa.setEnabled(b);
                                
@@ -121,10 +121,10 @@ public class IU_USUARIO extends javax.swing.JFrame {
         // TODO add your handling code here:
         	try {
                     if(jButtonPausa.isEnabled()==false){
-			gestor_reproductor.Continuar();
+			gestor_reproductor.continuar();
 			jButtonPausa.setEnabled(true);}
                     else{
-			gestor_reproductor.AbrirFichero();
+			gestor_reproductor.abrirFichero();
 			gestor_reproductor.reproducirMusica();
 			jButtonPausa.setEnabled(true);
 			jButtonPlay.setEnabled(false);}
@@ -140,7 +140,7 @@ public class IU_USUARIO extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
 				
-				gestor_reproductor.Stop();
+				gestor_reproductor.stop();
 				jButtonPausa.setEnabled(true);
 				jButtonPlay.setEnabled(true);				
 			} catch (Exception e) {

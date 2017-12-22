@@ -23,7 +23,8 @@ public class GestorUsuario {
 	 *            Atributo para el correo del usuario tipo cadena
 	 * @param rol
 	 *            Atributo que indica el rol de usuario tipo cadena
-	 * @return registrado Devuelve true si se ha creado bien sino devuelve false
+	 * @return registrado Devuelve true si se ha creado bien
+	 * 
 	 * @throws Exception
 	 *             Control de errores
 	 */
@@ -42,7 +43,7 @@ public class GestorUsuario {
 	 * Metodo que se encarga de logear al usuario, comprobando para ello si el
 	 * nombre de usuario y la password son correctas
 	 * 
-	 * @param nombre_usuario
+	 * @param nombreUsuario
 	 *            Atributo para el nombre de usuario tipo cadena
 	 * @param password
 	 *            Atributo para el password de usuario tipo cadena
@@ -51,9 +52,9 @@ public class GestorUsuario {
 	 * @throws Exception
 	 *             Control de errores
 	 */
-	public static boolean login(String nombre_usuario, String password) throws Exception {
+	public static boolean login(String nombreUsuario, String password) throws Exception {
 		boolean autenticado = false;
-		Usuario t = Usuario.read(nombre_usuario, password);
+		Usuario t = Usuario.read(nombreUsuario, password);
 
 		if (t != null) {
 
@@ -65,8 +66,8 @@ public class GestorUsuario {
 	}
 
 	/**
-	 * Metodo que comprueba que tipo de usario es, es decir administrador, o
-	 * usuario normal.
+	 * Metodo que comprueba que tipo de usario es, es decir administrador, o usuario
+	 * normal.
 	 * 
 	 * @param nombre_usuario
 	 *            Atributo para el nombre de usuario tipo cadena

@@ -97,6 +97,7 @@ public class Usuario {
 	 *         usuario
 	 * @throws Exception
 	 *             Control de errores
+	 *             
 	 */
 	public static int insert(String nombre, String apellidos, String login, String pass, String correo, String rol)
 			throws Exception {
@@ -116,10 +117,9 @@ public class Usuario {
 
 	}
 
-	/**
-	 * Metodos Getters/Setters
-	 * 
-	 */
+	
+	 //Metodos Getters/Setters	  
+	 
 	public String getRol() {
 		return rol;
 	}

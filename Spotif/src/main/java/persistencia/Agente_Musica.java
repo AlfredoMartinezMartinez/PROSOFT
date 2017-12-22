@@ -1,9 +1,6 @@
 package persistencia;
 
 import java.sql.*;
-import java.util.Iterator;
-import java.util.Vector;
-import java.util.LinkedList;
 
 /**
  * Clase que implementa los metodos necesarios para relacionar a la musica con la BBDD

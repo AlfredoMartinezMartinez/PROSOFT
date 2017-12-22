@@ -16,6 +16,12 @@ import org.junit.runners.Parameterized.Parameters;
 import dominio.Usuario;
 import persistencia.AgenteUsuario;
 
+/**
+ * 
+ * @author Prosoft
+ * @version 2.1
+ *
+ */
 @RunWith(Parameterized.class)
 public class TestBatteryUsuarioInsertVacio {
 
@@ -36,9 +42,18 @@ public class TestBatteryUsuarioInsertVacio {
 		this.rol = rol;
 	}
 
+	/**
+	 * 
+	 * Bateria de pruebas con distintos usuarios que incluyen cadena vacia
+	 * 
+	 * @return collecion de usuarios
+	 * 
+	 */
+
 	@Parameters
 	public static Collection<Object[]> datos() {
-		return Arrays.asList(new Object[][] { { "", "testApe", "testLog", "testPass", "testCorreo", "testRol" },
+		return Arrays.asList(new Object[][] { 
+				{ "", "testApe", "testLog", "testPass", "testCorreo", "testRol" },
 				{ "testNombre", "", "testLog", "testPass", "testCorreo", "testRol" },
 				{ "testNombre", "testApe", "", "testPass", "testCorreo", "testRol" },
 				{ "testNombre", "testApe", "testLog", "", "testCorreo", "testRol" },
@@ -46,9 +61,16 @@ public class TestBatteryUsuarioInsertVacio {
 				{ "testNombre", "testApe", "testLog", "testPass", "testCorreo", "" }, });
 	}
 
+	/**
+	 * pasa el test si no introduce los usuarios de la bateria de pruebas en BBDD
+	 * 
+	 * @throws Exception
+	 *             Control de errores
+	 *             
+	 */
 	@Test
 	public void testInsert() throws Exception {
-		assertEquals(0,Usuario.insert(nombre, apellidos, login, pass, correo, rol));
+		assertEquals(0, Usuario.insert(nombre, apellidos, login, pass, correo, rol));
 
 	}
 }

@@ -9,7 +9,7 @@ package dominio;
 public class GestorBusqueda {
 
 	/**
-	 * Método que implementa la búsqueda de canciones
+	 * Metodo que implementa la búsqueda de canciones
 	 * 
 	 * @return buscar
 	 */

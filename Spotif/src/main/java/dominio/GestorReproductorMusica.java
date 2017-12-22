@@ -24,7 +24,7 @@ public class GestorReproductorMusica {
 	 * @throws Exception
 	 *             control de error
 	 */
-	public void AbrirFichero() throws Exception {
+	public void abrirFichero() throws Exception {
 		// player.open(new File("Dire Straits - Sultans Of Swing.mp3"));
 		player.open(getClass().getResourceAsStream("/Dire Straits - Sultans Of Swing.mp3"));
 	}
@@ -35,7 +35,7 @@ public class GestorReproductorMusica {
 	 * @throws Exception
 	 *             control de error
 	 */
-	public void Pausa() throws Exception {
+	public void pausa() throws Exception {
 		player.pause();
 	}
 
@@ -45,7 +45,7 @@ public class GestorReproductorMusica {
 	 * @throws Exception
 	 *             control de error
 	 */
-	public void Continuar() throws Exception {
+	public void continuar() throws Exception {
 		player.resume();
 	}
 
@@ -55,15 +55,14 @@ public class GestorReproductorMusica {
 	 * @throws Exception
 	 *             control de error
 	 */
-	public void Stop() throws Exception {
+	public void stop() throws Exception {
 		player.stop();
 	}
 
 	/**
 	 * metodo que proporciona un metodos de comprobacion para objetos no
-	 * implementados
+	 * implementados	 * 
 	 * 
-	 * @param b
 	 */
 	void setVisible(boolean b) {
 		throw new UnsupportedOperationException("Not supported yet.");

@@ -120,7 +120,7 @@
 <a class="jxr_linenumber" name="L112" href="#L112">112</a>         
 <a class="jxr_linenumber" name="L113" href="#L113">113</a>         <strong class="jxr_keyword">try</strong>{
 <a class="jxr_linenumber" name="L114" href="#L114">114</a>                 jButtonPlay.setEnabled(<strong class="jxr_keyword">true</strong>);
-<a class="jxr_linenumber" name="L115" href="#L115">115</a>                 gestor_reproductor.Pausa();
+<a class="jxr_linenumber" name="L115" href="#L115">115</a>                 gestor_reproductor.pausa();
 <a class="jxr_linenumber" name="L116" href="#L116">116</a>                 jButtonPausa.setEnabled(false);
 <a class="jxr_linenumber" name="L117" href="#L117">117</a> 		<em class="jxr_comment">//btnPausa.setEnabled(b);</em>
 <a class="jxr_linenumber" name="L118" href="#L118">118</a>                                
@@ -134,10 +134,10 @@
 <a class="jxr_linenumber" name="L126" href="#L126">126</a>         <em class="jxr_comment">// TODO add your handling code here:</em>
 <a class="jxr_linenumber" name="L127" href="#L127">127</a>         	<strong class="jxr_keyword">try</strong> {
 <a class="jxr_linenumber" name="L128" href="#L128">128</a>                     <strong class="jxr_keyword">if</strong>(jButtonPausa.isEnabled()==false){
-<a class="jxr_linenumber" name="L129" href="#L129">129</a> 			gestor_reproductor.Continuar();
+<a class="jxr_linenumber" name="L129" href="#L129">129</a> 			gestor_reproductor.continuar();
 <a class="jxr_linenumber" name="L130" href="#L130">130</a> 			jButtonPausa.setEnabled(<strong class="jxr_keyword">true</strong>);}
 <a class="jxr_linenumber" name="L131" href="#L131">131</a>                     <strong class="jxr_keyword">else</strong>{
-<a class="jxr_linenumber" name="L132" href="#L132">132</a> 			gestor_reproductor.AbrirFichero();
+<a class="jxr_linenumber" name="L132" href="#L132">132</a> 			gestor_reproductor.abrirFichero();
 <a class="jxr_linenumber" name="L133" href="#L133">133</a> 			gestor_reproductor.reproducirMusica();
 <a class="jxr_linenumber" name="L134" href="#L134">134</a> 			jButtonPausa.setEnabled(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L135" href="#L135">135</a> 			jButtonPlay.setEnabled(false);}
@@ -153,7 +153,7 @@
 <a class="jxr_linenumber" name="L145" href="#L145">145</a>         <em class="jxr_comment">// TODO add your handling code here:</em>
 <a class="jxr_linenumber" name="L146" href="#L146">146</a>         <strong class="jxr_keyword">try</strong> {
 <a class="jxr_linenumber" name="L147" href="#L147">147</a> 				
-<a class="jxr_linenumber" name="L148" href="#L148">148</a> 				gestor_reproductor.Stop();
+<a class="jxr_linenumber" name="L148" href="#L148">148</a> 				gestor_reproductor.stop();
 <a class="jxr_linenumber" name="L149" href="#L149">149</a> 				jButtonPausa.setEnabled(<strong class="jxr_keyword">true</strong>);
 <a class="jxr_linenumber" name="L150" href="#L150">150</a> 				jButtonPlay.setEnabled(<strong class="jxr_keyword">true</strong>);				
 <a class="jxr_linenumber" name="L151" href="#L151">151</a> 			} <strong class="jxr_keyword">catch</strong> (Exception e) {

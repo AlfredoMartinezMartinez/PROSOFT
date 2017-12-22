@@ -111,12 +111,26 @@ public class TestaGestorUsuario {
 		assertEquals(expected, obtenido);
 	}
 	
+	/**
+	 * test que pasa si obtenemos un rol correcto de usuario
+	 * False False = False
+	 * 
+	 * @throws Exception
+	 *             control de excepciones
+	 */
 	@Test
 	public void testTipo1() throws Exception{
 		String expected="usuario";
 		String obtenido=GestorUsuario.tipo("1234", "5678");		
 		assertEquals(expected,obtenido);				
 	}
+	
+	/**
+	 * test que pasa si obtenemos un rol incorrecto	
+	 * 
+	 * @throws Exception
+	 *             control de excepciones
+	 */
 	@Test
 	public void testTipo2() throws Exception{
 		String expected="admin";
@@ -124,16 +138,28 @@ public class TestaGestorUsuario {
 		assertNotEquals(expected,obtenido);				
 	}
 	
+	/**
+	 * test que pasa si obtenemos un rol correcto de admin	
+	 * 
+	 * @throws Exception
+	 *             control de excepciones
+	 */
 	@Test
 	public void testTipo3() throws Exception{
 		String expected="admin";
 		String obtenido=GestorUsuario.tipo("admin", "admin");		
 		assertEquals(expected,obtenido);				
 	}
+	
+	/**
+	 * test que pasa si obtenemos una excepcion	
+	 * 
+	 * @throws Exception
+	 *             control de excepciones
+	 */
 	@Test(expected=NullPointerException.class)
 	public void testTipo4() throws Exception{		
-		String obtenido=GestorUsuario.tipo("error", "5678");	
-		System.out.println(obtenido);					
+		String obtenido=GestorUsuario.tipo("error", "5678");							
 	}
 	
 
