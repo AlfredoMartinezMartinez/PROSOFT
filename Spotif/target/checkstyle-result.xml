@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.11.2">
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorBusqueda.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\GestorBusqueda.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
@@ -12,7 +12,7 @@
 <error line="8" column="31" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="8" column="32" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorListas.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\GestorListas.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -24,7 +24,7 @@
 <error line="8" column="32" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="8" column="33" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorMusica.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\GestorMusica.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -45,7 +45,8 @@
 <error line="24" column="33" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="24" column="34" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorReproductorMusica.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\GestorReproductorMusica.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="2" column="8" severity="error" message="Unused import - java.io.File." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
 <error line="6" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -76,7 +77,7 @@
 <error line="30" column="13" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="30" column="29" severity="error" message="Parameter b should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\GestorUsuario.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\GestorUsuario.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -159,7 +160,7 @@
 <error line="54" column="9" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="54" column="39" severity="error" message="Parameter msg should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Gestor_compra.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\Gestor_compra.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -181,7 +182,7 @@
 <error line="14" column="31" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="14" column="32" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Gestor_pasarela.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\Gestor_pasarela.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -195,7 +196,8 @@
 <error line="8" column="31" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="8" column="32" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Gestor_Reproductor_Musica.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\Gestor_Reproductor_Musica.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="6" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="6" column="14" severity="error" message="Name &apos;Gestor_Reproductor_Musica&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
@@ -225,7 +227,7 @@
 <error line="29" column="13" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="29" column="29" severity="error" message="Parameter b should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Musica.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\Musica.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="3" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -283,7 +285,7 @@
 <error line="31" column="27" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="31" column="28" severity="error" message="&apos;=&apos; is not followed by whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Dominio\Usuario.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Dominio\Usuario.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Dominio&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="4" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - Persistencia.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
@@ -430,7 +432,7 @@
 <error line="74" column="39" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 <error line="75" column="17" severity="error" message="&apos;=&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Persistencia\AgenteUsuario.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Persistencia\AgenteUsuario.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Persistencia&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
@@ -559,7 +561,7 @@
 <error line="138" severity="error" message="Line is longer than 80 characters (found 108)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="139" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Persistencia\Agente_Musica.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Persistencia\Agente_Musica.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Persistencia&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="4" severity="error" message="Using the &apos;.*&apos; form of import should be avoided - java.sql.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
@@ -605,7 +607,8 @@
 <error line="45" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="45" column="47" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="6" column="9" severity="error" message="Name &apos;Presentacion&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="14" column="14" severity="error" message="Name &apos;IU_ADMINISTRADOR&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
@@ -749,7 +752,8 @@
 <error line="208" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
 <error line="208" column="37" severity="error" message="Name &apos;gestor_reproductor&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="6" column="9" severity="error" message="Name &apos;Presentacion&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="15" column="14" severity="error" message="Name &apos;IU_CREARUSUARIO&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
 <error line="17" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
@@ -946,7 +950,8 @@
 <error line="237" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
 <error line="238" column="5" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_LOGIN.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_LOGIN.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" column="9" severity="error" message="Name &apos;Presentacion&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="23" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
 <error line="23" column="14" severity="error" message="Name &apos;IU_LOGIN&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
@@ -1045,7 +1050,8 @@
 <error line="197" column="45" severity="error" message="Parameter e should be final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="199" column="29" severity="error" message="Must have at least one statement." source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
 </file>
-<file name="C:\Users\mpm_7\Desktop\eclipseworkspace\Spotif\src\main\java\Presentacion\IU_USUARIO.java">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\Presentacion\IU_USUARIO.java">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="6" column="9" severity="error" message="Name &apos;Presentacion&apos; must match pattern &apos;^[a-z]+(\.[a-zA-Z_][a-zA-Z0-9_]*)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
 <error line="14" column="14" severity="error" message="Name &apos;IU_USUARIO&apos; must match pattern &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
 <error line="16" severity="error" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
