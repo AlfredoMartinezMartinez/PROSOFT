@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IULogin.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Spotif</a> &gt; <a href="index.source.html" class="el_package">presentacion</a> &gt; <span class="el_source">IULogin.java</span></div><h1>IULogin.java</h1><pre class="source lang-java linenums">package presentacion;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.GridBagLayout;
+import javax.swing.JLabel;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import javax.swing.JTextField;
+
+import dominio.GestorUsuario;
+
+import javax.swing.JPasswordField;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class IULogin {
+
+	private JFrame frmLogIn;
+	private JPanel panel;
+	private JLabel lblNombreUsario;
+	private JLabel lblContraseaUsuario;
+	private JTextField txtNombre;
+	private JPasswordField pswPass;
+	private JButton btnNuevoUsuario;
+	private JButton btnInicoSesion;
+	private JLabel lblNewLabel;
+	private JLabel lblNombre;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+<span class="nc" id="L40">		EventQueue.invokeLater(new Runnable() {</span>
+			public void run() {
+				try {
+<span class="nc" id="L43">					IULogin window = new IULogin();</span>
+<span class="nc" id="L44">					window.frmLogIn.setVisible(true);</span>
+<span class="nc" id="L45">				} catch (Exception e) {</span>
+<span class="nc" id="L46">					e.printStackTrace();</span>
+<span class="nc" id="L47">				}</span>
+<span class="nc" id="L48">			}</span>
+		});
+<span class="nc" id="L50">	}</span>
+
+	/**
+	 * Create the application.
+	 */
+<span class="nc" id="L55">	public IULogin() {</span>
+<span class="nc" id="L56">		initialize();</span>
+<span class="nc" id="L57">	}</span>
+
+	public JFrame getFrmVentanaLogIn() {
+<span class="nc" id="L60">		return frmLogIn;</span>
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+<span class="nc" id="L67">		frmLogIn = new JFrame();</span>
+<span class="nc" id="L68">		frmLogIn.setTitle(&quot;Prosoft&quot;);</span>
+<span class="nc" id="L69">		frmLogIn.setIconImage(Toolkit.getDefaultToolkit().getImage(IULogin.class.getResource(</span>
+				&quot;/presentacion/ProSoft_SinFondo (1)-iloveimg-resized-iloveimg-resized-iloveimg-resized.png&quot;)));
+<span class="nc" id="L71">		frmLogIn.setBounds(100, 100, 822, 323);</span>
+<span class="nc" id="L72">		frmLogIn.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+
+<span class="nc" id="L74">		panel = new JPanel();</span>
+<span class="nc" id="L75">		frmLogIn.getContentPane().add(panel, BorderLayout.CENTER);</span>
+<span class="nc" id="L76">		GridBagLayout gbl_panel = new GridBagLayout();</span>
+<span class="nc" id="L77">		gbl_panel.columnWidths = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 67, 0 };</span>
+<span class="nc" id="L78">		gbl_panel.rowHeights = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };</span>
+<span class="nc" id="L79">		gbl_panel.columnWeights = new double[] { 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0,</span>
+				Double.MIN_VALUE };
+<span class="nc" id="L81">		gbl_panel.rowWeights = new double[] { 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 0.0, 1.0, Double.MIN_VALUE };</span>
+<span class="nc" id="L82">		panel.setLayout(gbl_panel);</span>
+
+<span class="nc" id="L84">		lblNewLabel = new JLabel(&quot;&quot;);</span>
+<span class="nc" id="L85">		lblNewLabel.setIcon(new ImageIcon(IULogin.class</span>
+<span class="nc" id="L86">				.getResource(&quot;/presentacion/ProSoft_SinFondo (1)-iloveimg-resized-iloveimg-resized.png&quot;)));</span>
+<span class="nc" id="L87">		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();</span>
+<span class="nc" id="L88">		gbc_lblNewLabel.gridwidth = 2;</span>
+<span class="nc" id="L89">		gbc_lblNewLabel.gridheight = 6;</span>
+<span class="nc" id="L90">		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L91">		gbc_lblNewLabel.gridx = 1;</span>
+<span class="nc" id="L92">		gbc_lblNewLabel.gridy = 1;</span>
+<span class="nc" id="L93">		panel.add(lblNewLabel, gbc_lblNewLabel);</span>
+
+<span class="nc" id="L95">		lblNombreUsario = new JLabel(&quot;Name:&quot;);</span>
+<span class="nc" id="L96">		GridBagConstraints gbc_lblNombreUsario = new GridBagConstraints();</span>
+<span class="nc" id="L97">		gbc_lblNombreUsario.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L98">		gbc_lblNombreUsario.gridx = 4;</span>
+<span class="nc" id="L99">		gbc_lblNombreUsario.gridy = 2;</span>
+<span class="nc" id="L100">		panel.add(lblNombreUsario, gbc_lblNombreUsario);</span>
+
+<span class="nc" id="L102">		txtNombre = new JTextField();</span>
+<span class="nc" id="L103">		txtNombre.addActionListener(new TxtNombreActionListener());</span>
+<span class="nc" id="L104">		GridBagConstraints gbc_txtNombre = new GridBagConstraints();</span>
+<span class="nc" id="L105">		gbc_txtNombre.gridwidth = 5;</span>
+<span class="nc" id="L106">		gbc_txtNombre.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L107">		gbc_txtNombre.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L108">		gbc_txtNombre.gridx = 6;</span>
+<span class="nc" id="L109">		gbc_txtNombre.gridy = 2;</span>
+<span class="nc" id="L110">		panel.add(txtNombre, gbc_txtNombre);</span>
+<span class="nc" id="L111">		txtNombre.setColumns(10);</span>
+
+<span class="nc" id="L113">		lblNombre = new JLabel(&quot;&quot;);</span>
+<span class="nc" id="L114">		GridBagConstraints gbc_lblNombre = new GridBagConstraints();</span>
+<span class="nc" id="L115">		gbc_lblNombre.anchor = GridBagConstraints.SOUTHWEST;</span>
+<span class="nc" id="L116">		gbc_lblNombre.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L117">		gbc_lblNombre.gridx = 12;</span>
+<span class="nc" id="L118">		gbc_lblNombre.gridy = 2;</span>
+<span class="nc" id="L119">		panel.add(lblNombre, gbc_lblNombre);</span>
+
+<span class="nc" id="L121">		lblContraseaUsuario = new JLabel(&quot;Password:&quot;);</span>
+<span class="nc" id="L122">		GridBagConstraints gbc_lblContraseaUsuario = new GridBagConstraints();</span>
+<span class="nc" id="L123">		gbc_lblContraseaUsuario.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L124">		gbc_lblContraseaUsuario.gridx = 4;</span>
+<span class="nc" id="L125">		gbc_lblContraseaUsuario.gridy = 4;</span>
+<span class="nc" id="L126">		panel.add(lblContraseaUsuario, gbc_lblContraseaUsuario);</span>
+
+<span class="nc" id="L128">		pswPass = new JPasswordField();</span>
+<span class="nc" id="L129">		pswPass.addActionListener(new PswPassActionListener());</span>
+<span class="nc" id="L130">		GridBagConstraints gbc_pswPass = new GridBagConstraints();</span>
+<span class="nc" id="L131">		gbc_pswPass.gridwidth = 5;</span>
+<span class="nc" id="L132">		gbc_pswPass.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L133">		gbc_pswPass.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L134">		gbc_pswPass.gridx = 6;</span>
+<span class="nc" id="L135">		gbc_pswPass.gridy = 4;</span>
+<span class="nc" id="L136">		panel.add(pswPass, gbc_pswPass);</span>
+
+<span class="nc" id="L138">		btnInicoSesion = new JButton(&quot;InicioSesion&quot;);</span>
+<span class="nc" id="L139">		btnInicoSesion.addActionListener(new BtnInicoSesionActionListener());</span>
+<span class="nc" id="L140">		GridBagConstraints gbc_btnInicoSesion = new GridBagConstraints();</span>
+<span class="nc" id="L141">		gbc_btnInicoSesion.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L142">		gbc_btnInicoSesion.gridwidth = 2;</span>
+<span class="nc" id="L143">		gbc_btnInicoSesion.anchor = GridBagConstraints.SOUTH;</span>
+<span class="nc" id="L144">		gbc_btnInicoSesion.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L145">		gbc_btnInicoSesion.gridx = 4;</span>
+<span class="nc" id="L146">		gbc_btnInicoSesion.gridy = 6;</span>
+<span class="nc" id="L147">		panel.add(btnInicoSesion, gbc_btnInicoSesion);</span>
+
+<span class="nc" id="L149">		btnNuevoUsuario = new JButton(&quot;Nuevo Usuario&quot;);</span>
+<span class="nc" id="L150">		btnNuevoUsuario.addActionListener(new BtnNuevoUsuarioActionListener());</span>
+<span class="nc" id="L151">		GridBagConstraints gbc_btnNuevoUsuario = new GridBagConstraints();</span>
+<span class="nc" id="L152">		gbc_btnNuevoUsuario.fill = GridBagConstraints.HORIZONTAL;</span>
+<span class="nc" id="L153">		gbc_btnNuevoUsuario.gridwidth = 3;</span>
+<span class="nc" id="L154">		gbc_btnNuevoUsuario.insets = new Insets(0, 0, 5, 5);</span>
+<span class="nc" id="L155">		gbc_btnNuevoUsuario.gridx = 8;</span>
+<span class="nc" id="L156">		gbc_btnNuevoUsuario.gridy = 6;</span>
+<span class="nc" id="L157">		panel.add(btnNuevoUsuario, gbc_btnNuevoUsuario);</span>
+<span class="nc" id="L158">		btnInicoSesion.setEnabled(false);</span>
+<span class="nc" id="L159">		pswPass.setEnabled(false);</span>
+<span class="nc" id="L160">	}</span>
+
+<span class="nc" id="L162">	private class BtnInicoSesionActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent arg0) {
+			try {
+<span class="nc" id="L165">				boolean autenticar1 = GestorUsuario.login(txtNombre.getText(), String.valueOf(pswPass.getPassword()));</span>
+
+<span class="nc bnc" id="L167" title="All 2 branches missed.">				if (autenticar1) {</span>
+
+<span class="nc" id="L169">					lblNombre.setText(&quot;Usuario registrado&quot;);</span>
+<span class="nc" id="L170">					String tipo = GestorUsuario.tipo(txtNombre.getText(), String.valueOf(pswPass.getPassword()));</span>
+<span class="nc bnc" id="L171" title="All 2 branches missed.">					if (tipo.equals(&quot;admin&quot;)) {</span>
+
+<span class="nc" id="L173">						IUAdministrador frame = new IUAdministrador();</span>
+<span class="nc" id="L174">						frame.setVisible(true);</span>
+						// frame.jLabelNusario.setText(jTextFieldUser.getText());
+<span class="nc" id="L176">						frmLogIn.dispose();</span>
+					}
+<span class="nc bnc" id="L178" title="All 2 branches missed.">					if (tipo.equals(&quot;usuario&quot;)) {</span>
+<span class="nc" id="L179">						IUUsuario frame2 = new IUUsuario();</span>
+<span class="nc" id="L180">						frame2.setVisible(true);</span>
+						// frame2.jLabelNusario.setText(jTextFieldUser.getText());
+<span class="nc" id="L182">						frmLogIn.dispose();</span>
+					}
+
+<span class="nc" id="L185">				} else {</span>
+
+<span class="nc" id="L187">					lblNombre.setText(&quot;Usuario o password incorrecto&quot;);</span>
+<span class="nc" id="L188">					txtNombre.setText(&quot;&quot;);</span>
+<span class="nc" id="L189">					pswPass.setText(&quot;&quot;);</span>
+
+				}
+<span class="nc" id="L192">			} catch (Exception e) {</span>
+<span class="nc" id="L193">				e.printStackTrace();</span>
+<span class="nc" id="L194">			} // fin catch</span>
+
+<span class="nc" id="L196">		}</span>
+	}
+
+<span class="nc" id="L199">	private class BtnNuevoUsuarioActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent e) {
+
+			try {
+<span class="nc" id="L203">				IUCrearUsuario frame = new IUCrearUsuario();</span>
+<span class="nc" id="L204">				frame.setVisible(true);</span>
+<span class="nc" id="L205">				frmLogIn.dispose();</span>
+<span class="nc" id="L206">			} catch (Exception e1) {</span>
+<span class="nc" id="L207">				e1.printStackTrace();</span>
+<span class="nc" id="L208">			} // fin catch</span>
+
+<span class="nc" id="L210">		}</span>
+	}
+
+<span class="nc" id="L213">	private class TxtNombreActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L215">			pswPass.setEnabled(true);</span>
+<span class="nc" id="L216">		}</span>
+	}
+
+<span class="nc" id="L219">	private class PswPassActionListener implements ActionListener {</span>
+		public void actionPerformed(ActionEvent e) {
+<span class="nc" id="L221">			btnInicoSesion.setEnabled(true);</span>
+<span class="nc" id="L222">		}</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

@@ -26,7 +26,7 @@ under the License.
     <copyright>&#169;2017</copyright>
     <item>
       <title>File: 15,
-             Errors: 916,
+             Errors: 867,
              Warnings: 0,
              Infos: 0
       </title>
@@ -44,34 +44,6 @@ under the License.
             </tr>
           </thead>
           <tbody>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#presentacion.IU_CREARUSUARIO.java">presentacion/IU_CREARUSUARIO.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  195
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#presentacion.IU_ADMINISTRADOR.java">presentacion/IU_ADMINISTRADOR.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  142
-                </td>
-              </tr>
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#dominio.Gestor_compra.java">dominio/Gestor_compra.java</a>
@@ -102,6 +74,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#presentacion.IULogin.java">presentacion/IULogin.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  98
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#dominio.Musica.java">dominio/Musica.java</a>
                 </td>
                 <td>
@@ -116,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="${project.url}/checkstyle.html#presentacion.IU_USUARIO.java">presentacion/IU_USUARIO.java</a>
+                  <a href="${project.url}/checkstyle.html#presentacion.IUAdministrador.java">presentacion/IUAdministrador.java</a>
                 </td>
                 <td>
                   0
@@ -125,7 +111,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  134
+                  127
                 </td>
               </tr>
                           <tr>
@@ -139,7 +125,7 @@ under the License.
                   0
                 </td>
                 <td>
-                  119
+                  118
                 </td>
               </tr>
                           <tr>
@@ -154,20 +140,6 @@ under the License.
                 </td>
                 <td>
                   27
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="${project.url}/checkstyle.html#presentacion.IU_LOGIN.java">presentacion/IU_LOGIN.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  100
                 </td>
               </tr>
                           <tr>
@@ -214,6 +186,20 @@ under the License.
               </tr>
                           <tr>
                 <td>
+                  <a href="${project.url}/checkstyle.html#presentacion.IUCrearUsuario.java">presentacion/IUCrearUsuario.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  180
+                </td>
+              </tr>
+                          <tr>
+                <td>
                   <a href="${project.url}/checkstyle.html#dominio.GestorMusica.java">dominio/GestorMusica.java</a>
                 </td>
                 <td>
@@ -252,6 +238,20 @@ under the License.
                 </td>
                 <td>
                   36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#presentacion.IUUsuario.java">presentacion/IUUsuario.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  118
                 </td>
               </tr>
                       </tbody>

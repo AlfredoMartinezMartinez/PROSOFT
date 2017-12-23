@@ -98,7 +98,7 @@ public class Usuario {
 	 *         usuario
 	 * @throws Exception
 	 *             Control de errores
-	 *             
+	 * 
 	 */
 	public static int insert(String nombre, String apellidos, String login, String pass, String correo, String rol)
 			throws Exception {
@@ -108,19 +108,17 @@ public class Usuario {
 			AgenteUsuario agent = AgenteUsuario.getAgente();
 			int num = agent.insert("INSERT INTO usuario VALUES('" + nombre + "','" + apellidos + "','" + login + "','"
 					+ pass + "','" + correo + "','" + rol + "');");
-			if (num != PersonalCorrecto) {
-				if (GestorUsuario.login(login, pass)) {
-					PersonalCorrecto = 1;
-				}
+			if (num != PersonalCorrecto && GestorUsuario.login(login, pass)) {
+				PersonalCorrecto = 1;
 			}
+
 		}
 		return PersonalCorrecto;
 
 	}
 
-	
-	 //Metodos Getters/Setters	  
-	 
+	// Metodos Getters/Setters
+
 	public String getRol() {
 		return rol;
 	}

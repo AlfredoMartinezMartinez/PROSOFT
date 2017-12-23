@@ -6,30 +6,30 @@ Spotif,dominio,Gestor_pasarela,7,0,0,0,3,0,2,0,2,0
 Spotif,dominio,GestorReproductorMusica,37,0,0,0,13,0,7,0,7,0
 Spotif,dominio,GestorUsuario,11,40,0,4,3,14,3,5,3,3
 Spotif,dominio,GestorListas,7,0,0,0,3,0,2,0,2,0
-Spotif,dominio,Usuario,99,229,28,32,43,45,34,13,12,5
+Spotif,dominio,Usuario,99,229,28,32,43,44,34,13,12,5
 Spotif,dominio,GestorMusica,15,0,0,0,7,0,4,0,4,0
-Spotif,presentacion,IU_CREARUSUARIO,712,0,6,0,119,0,9,0,6,0
-Spotif,presentacion,IU_USUARIO,445,0,6,0,88,0,10,0,7,0
-Spotif,presentacion,IU_LOGIN.TxtNombreActionListener,12,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_LOGIN.BtnInicoSesionActionListener,86,0,6,0,22,0,5,0,2,0
-Spotif,presentacion,IU_LOGIN.PswPassActionListener,12,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_LOGIN.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_USUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_LOGIN.BtnNuevoUsuarioActionListener,22,0,0,0,8,0,2,0,2,0
-Spotif,presentacion,IU_CREARUSUARIO.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_ADMINISTRADOR,475,0,6,0,92,0,10,0,7,0
-Spotif,presentacion,IU_CREARUSUARIO.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
-Spotif,presentacion,IU_LOGIN,605,0,0,0,89,0,4,0,4,0
-Spotif,presentacion,IU_USUARIO.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IULogin.BtnInicoSesionActionListener,86,0,6,0,21,0,5,0,2,0
+Spotif,presentacion,IUAdministrador,475,0,6,0,92,0,10,0,7,0
+Spotif,presentacion,IULogin.BtnNuevoUsuarioActionListener,22,0,0,0,8,0,2,0,2,0
+Spotif,presentacion,IULogin.PswPassActionListener,12,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUAdministrador.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUAdministrador.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUAdministrador.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUAdministrador.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUAdministrador.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IULogin.new Runnable() {...},16,0,0,0,7,0,2,0,2,0
+Spotif,presentacion,IUUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUUsuario.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUCrearUsuario,712,0,6,0,119,0,9,0,6,0
+Spotif,presentacion,IULogin,605,0,0,0,89,0,4,0,4,0
+Spotif,presentacion,IUCrearUsuario.new Runnable() {...},9,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUCrearUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUCrearUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUCrearUsuario.new ActionListener() {...},11,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IULogin.TxtNombreActionListener,12,0,0,0,3,0,2,0,2,0
+Spotif,presentacion,IUUsuario,445,0,6,0,88,0,10,0,7,0
 Spotif,persistencia,AgenteUsuario,0,154,0,8,0,53,0,13,0,9
 Spotif,persistencia,Agente_Musica,30,0,2,0,14,0,6,0,5,0
