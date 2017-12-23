@@ -1,16 +1,15 @@
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\Gestor_pasarela.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Persistencia\AgenteUsuario.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\Usuario.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Presentacion\IU_USUARIO.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\Gestor_compra.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\GestorListas.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Presentacion\IU_ADMINISTRADOR.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Presentacion\IU_LOGIN.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\Gestor_Reproductor_Musica.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\GestorMusica.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\GestorUsuario.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Persistencia\Agente_Musica.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\GestorBusqueda.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Presentacion\IU_CREARUSUARIO.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\GestorReproductorMusica.java
-C:\Users\Alfredo\Documents\Universidad\eclipse\Spotif\src\main\java\Dominio\Musica.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorUsuario.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorMusica.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\persistencia\AgenteUsuario.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\persistencia\Agente_Musica.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorListas.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IULogin.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorBusqueda.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\Gestor_pasarela.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUUsuario.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\Gestor_compra.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\Musica.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\Usuario.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUCrearUsuario.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUAdministrador.java
+C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorReproductorMusica.java

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AgenteUsuario.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Spotif</a> &gt; <a href="index.source.html" class="el_package">persistencia</a> &gt; <span class="el_source">AgenteUsuario.java</span></div><h1>AgenteUsuario.java</h1><pre class="source lang-java linenums">package persistencia;
+
+import java.sql.*;
+import java.util.Vector;
+
+/**
+ * 
+ * Clase que implementa los metodos necesarios para relacionar a los usuarios
+ * con la BBDD
+ * 
+ * @author PROSOFT
+ *
+ */
+public class AgenteUsuario {
+<span class="fc" id="L15">	protected static AgenteUsuario mInstancia = null;</span>
+	protected static Connection mBD;
+<span class="fc" id="L17">	private static String url = &quot;jdbc:mysql://localhost:3307/spotif?user=root&amp;password=root&quot;;</span>
+<span class="fc" id="L18">	private static String driver = &quot;com.mysql.jdbc.Driver&quot;;</span>
+
+<span class="fc" id="L20">	private AgenteUsuario() throws Exception {</span>
+<span class="fc" id="L21">		conectar();</span>
+
+<span class="fc" id="L23">	}</span>
+
+	/**
+	 * Metodo que implementa el patron singleton, el cual permite de una clase solo
+	 * haya una instancia.
+	 * 
+	 * @return mInstancia Instancia de Agente Usuario
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public static AgenteUsuario getAgente() throws Exception {
+<span class="fc bfc" id="L34" title="All 2 branches covered.">		if (mInstancia == null) {</span>
+<span class="fc" id="L35">			mInstancia = new AgenteUsuario();</span>
+		}
+<span class="fc" id="L37">		return mInstancia;</span>
+	}
+
+	/**
+	 * Metodo que realiza la conexion con la BBDD.
+	 * 
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	private void conectar() throws Exception {
+<span class="fc" id="L47">		Class.forName(driver);</span>
+<span class="fc" id="L48">		mBD = DriverManager.getConnection(url);</span>
+<span class="fc" id="L49">	}</span>
+
+	/**
+	 * Metodo que realiza la desconexion con la BBDD.
+	 * 
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public void desconectar() throws Exception {
+<span class="fc" id="L58">		mBD.close();</span>
+<span class="fc" id="L59">	}</span>
+
+	/**
+	 * Metodo para realizar una insercion en la base de datos
+	 * 
+	 * @param SQL
+	 *            Intruccion SQL de insercion de usuario
+	 * @return res Parametro del resultado de la insercion
+	 * 
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public int insert(String SQL) throws Exception {
+<span class="fc" id="L72">		conectar();</span>
+<span class="fc" id="L73">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L74">		int res = 0;</span>
+		try {
+<span class="fc" id="L76">			res = stmt.executeUpdate();</span>
+<span class="fc" id="L77">			stmt.close();</span>
+			//desconectar();
+
+<span class="fc" id="L80">		} catch (SQLException e) {</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">			if (e instanceof SQLIntegrityConstraintViolationException) {</span>
+<span class="fc" id="L82">				System.out.println(&quot;cliente existe&quot;);</span>
+			} 
+<span class="fc bfc" id="L84" title="All 2 branches covered.">			if(e instanceof SQLSyntaxErrorException) {</span>
+<span class="fc" id="L85">				System.out.println(&quot;Error de sintaxis&quot;);</span>
+			}			
+<span class="fc" id="L87">		}</span>
+<span class="fc" id="L88">		return res;</span>
+	}
+
+	/**
+	 * Metodo para realizar una eliminacion en la base de datos
+	 * 
+	 * @param SQL
+	 *            Instruccion SQL de borrado
+	 * @return res Resultado de la ejecucion SQL
+	 * @throws SQLException
+	 *             Control de Errores SQL
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public int delete(String SQL) throws SQLException, Exception {
+<span class="fc" id="L103">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L104">		int res = stmt.executeUpdate();</span>
+<span class="fc" id="L105">		stmt.close();</span>
+<span class="fc" id="L106">		desconectar();</span>
+<span class="fc" id="L107">		return res;</span>
+	}
+
+	/**
+	 * Metodo para realizar una actualizacion en la base de datos
+	 * 
+	 * @param SQL
+	 *            Instruccion SQL de actualizacion
+	 * @return Resultado de la ejecucion SQL
+	 * @throws SQLException
+	 *             Control de Errores SQL
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public int update(String SQL) throws SQLException, Exception {
+<span class="fc" id="L122">		conectar();</span>
+<span class="fc" id="L123">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L124">		int res = stmt.executeUpdate();</span>
+<span class="fc" id="L125">		stmt.close();</span>
+<span class="fc" id="L126">		desconectar();</span>
+<span class="fc" id="L127">		return res;</span>
+	}
+
+	/**
+	 * Metodo que lee un usuario de la BBDD
+	 * 
+	 * @param SQL
+	 *            Instruccion SQL de lectura
+	 * @return vec Vector de vectores, donde cada uno de los vectores que contiene
+	 *         el vector principal representa los registros que se recuperan de la
+	 *         base de datos.
+	 * @throws SQLException
+	 *             Control de Errores SQL
+	 * @throws Exception
+	 *             Control de Errores
+	 */
+	public Vector&lt;Object&gt; select(String SQL) throws SQLException, Exception {
+<span class="fc" id="L144">		conectar();</span>
+<span class="fc" id="L145">		PreparedStatement stmt = mBD.prepareStatement(SQL);</span>
+<span class="fc" id="L146">		ResultSet s = stmt.executeQuery();</span>
+<span class="fc" id="L147">		Vector&lt;Object&gt; vec = new Vector&lt;Object&gt;();</span>
+<span class="fc" id="L148">		Vector&lt;Object&gt; auxiliar=null;</span>
+<span class="fc bfc" id="L149" title="All 2 branches covered.">		while (s.next()) {</span>
+<span class="fc" id="L150">			auxiliar = new Vector&lt;Object&gt;();</span>
+<span class="fc" id="L151">			auxiliar.add((String) s.getString(&quot;nombre&quot;));</span>
+<span class="fc" id="L152">			auxiliar.add((String) s.getString(&quot;apellidos&quot;));</span>
+<span class="fc" id="L153">			auxiliar.add((String) s.getString(&quot;login&quot;));</span>
+<span class="fc" id="L154">			auxiliar.add((String) s.getString(&quot;password&quot;));</span>
+<span class="fc" id="L155">			auxiliar.add((String) s.getString(&quot;correo&quot;));</span>
+<span class="fc" id="L156">			auxiliar.add((String) s.getString(&quot;tipo&quot;));</span>
+<span class="fc" id="L157">			vec.add((Vector) auxiliar);</span>
+
+		}
+<span class="fc" id="L160">		stmt.close();		</span>
+<span class="fc" id="L161">		return vec;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

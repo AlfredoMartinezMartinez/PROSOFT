@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-23T01:55:02.051">
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\GestorReproductorMusica.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="20" rule="UnusedImports" ruleset="Import Statements" package="dominio" class="GestorReproductorMusica" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.io.File'
+</violation>
+</file>
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\dominio\Usuario.java">
+<violation beginline="174" endline="174" begincolumn="24" endcolumn="41" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="dominio" class="Usuario" method="equals" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+</file>
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUAdministrador.java">
+<violation beginline="106" endline="106" begincolumn="77" endcolumn="79" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUAdministrador" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="111" endline="111" begincolumn="77" endcolumn="79" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUAdministrador" method="jButtonPausaActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="125" endline="125" begincolumn="76" endcolumn="78" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUAdministrador" method="jButtonPlayActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="144" endline="144" begincolumn="76" endcolumn="78" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUAdministrador" method="jButtonStopActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUCrearUsuario.java">
+<violation beginline="137" endline="137" begincolumn="77" endcolumn="79" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUCrearUsuario" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="142" endline="142" begincolumn="84" endcolumn="86" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUCrearUsuario" method="jButtonCrearUsuarioActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="177" endline="177" begincolumn="79" endcolumn="81" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUCrearUsuario" method="jButtonLimpiarActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+<file name="C:\Users\Alfredo\Documents\Universidad\Asignaturas\Ac.3.A.Ing.Soft 2\Practicas\git\PROSOFT\Spotif\src\main\java\presentacion\IUUsuario.java">
+<violation beginline="101" endline="101" begincolumn="77" endcolumn="79" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUUsuario" method="jButtonSalirActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="106" endline="106" begincolumn="77" endcolumn="79" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUUsuario" method="jButtonPausaActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="120" endline="120" begincolumn="76" endcolumn="78" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUUsuario" method="jButtonPlayActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+<violation beginline="139" endline="139" begincolumn="76" endcolumn="78" rule="UnusedFormalParameter" ruleset="Unused Code" package="presentacion" class="IUUsuario" method="jButtonStopActionPerformed" variable="evt" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'evt'.
+</violation>
+</file>
+</pmd>
